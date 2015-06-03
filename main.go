@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"go-php-serialize/phpserialize"
 	"io/ioutil"
 	"log"
+
+	"github.com/bikbah/go-php-serialize/phpserialize"
 )
 
 func main() {
@@ -19,8 +20,16 @@ func main() {
 	if err != nil {
 		log.Fatalf("Deserialize data error: %v", err)
 	}
-	m := res.(map[string]interface{})
-	fmt.Println(m)
+	m, _ := res.(map[interface{}]interface{})
+	// fmt.Println(m, casted)
+	for k, _ := range m {
+		fmt.Println(m[k])
+		return
+	}
+	for k, _ := range res {
+		fmt.Println(res[k])
+		return
+	}
 	// fmt.Printf("%+v", res)
 	// fmt.Println(m)
 	// fmt.Println(reflect.TypeOf(res))
