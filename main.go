@@ -31,17 +31,13 @@ func main() {
 		log.Fatalf("Deserialize data error: %v", err)
 	}
 
+	// Parse raw data and get text from it
 	m, ok := res.(map[interface{}]interface{})
-	if !ok {
-		log.Fatal("interface{} to map[interface{}]interface{} assertion fail..")
-	}
+	checkAssert(ok)
 	convertedMap := parseRawMap(m)
 	wholeText := getText(convertedMap)
-	fmt.Println(wholeText)
-
-	if err := ioutil.WriteFile("out.html", []byte(wholeText), 0644); err != nil {
-		log.Fatal("Write file error")
-	}
+	saveData(wholeText)
+	// fmt.Println(wholeText)
 
 	// See key types
 	// keysCount = make(map[string]int)
