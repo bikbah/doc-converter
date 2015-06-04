@@ -147,3 +147,9 @@ func checkAssert(ok bool) {
 		// log.Fatal("Assertion error..")
 	}
 }
+
+func saveData(text string) {
+	if err := ioutil.WriteFile("out.html", []byte(text), 0644); err != nil {
+		log.Fatalf("Write file error: %v", err)
+	}
+}
