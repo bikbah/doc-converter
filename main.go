@@ -20,7 +20,7 @@ var (
 
 func main() {
 	// Read php serialized file
-	dat, err := ioutil.ReadFile("2")
+	dat, err := ioutil.ReadFile("1")
 	if err != nil {
 		log.Fatalf("Read file error: %v", err)
 	}
@@ -145,7 +145,8 @@ func checkAssert(ok bool) {
 }
 
 func saveData(text string) {
-	if err := ioutil.WriteFile("out.html", []byte(text), 0644); err != nil {
+	html := `<html><head><meta charset="utf8"></head><body>` + text + `</body></html>`
+	if err := ioutil.WriteFile("out.html", []byte(html), 0644); err != nil {
 		log.Fatalf("Write file error: %v", err)
 	}
 }
