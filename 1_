@@ -1,0 +1,5373 @@
+<?php
+
+array (
+  '$' => 
+  array (
+    'id' => 'eRoot',
+    'type' => 'contents',
+    'version' => '2.3',
+    'documentType' => 'enclosureTemplate',
+    'project' => '{B668A77D-DC7B-241C-3CE6-F4B9907D387D}',
+    'projectfamily' => '0102010003',
+    'allowCrossProperties' => 'false',
+    'orientation' => 'vertical',
+  ),
+  'e' => 
+  array (
+    0 => 
+    array (
+      '$' => 
+      array (
+        'id' => 'eTemplateAdditionalParameters',
+        'tag' => 'div',
+        'number' => 'clear',
+        'type' => 'tree',
+        'links' => '',
+        'class' => 'paragraph',
+      ),
+      'dependence' => 
+      array (
+        0 => 
+        array (
+          '$' => 
+          array (
+            'option' => 'oTemplateParameters',
+            'condition' => '=',
+            'value' => '1',
+          ),
+        ),
+      ),
+      'e' => 
+      array (
+        0 => 
+        array (
+          '$' => 
+          array (
+            'id' => 'linkContainereACB8D4EA',
+            'tag' => 'none',
+            'number' => 'clear',
+            'type' => 'linear',
+            'link' => '6A84613A83A54934863EF79D8D199DC4',
+            'source' => 'textBlocks',
+            'linkId' => 'linkF0634352',
+          ),
+          'e' => 
+          array (
+            0 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'eD56F174C',
+                'number' => 'clear',
+                'links' => '',
+                'class' => 'paragraph',
+                'tag' => 'p',
+                'linkId' => 'linkF0634352',
+                'textBlock' => 'true',
+                'source' => 'textBlocks',
+                'link' => '6A84613A83A54934863EF79D8D199DC4',
+                'storedId' => 'e0',
+              ),
+              'attribute' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'class',
+                    'value' => 'paragraph',
+                  ),
+                ),
+                1 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'style',
+                    'value' => 'FONT-SIZE: 14pt',
+                  ),
+                ),
+              ),
+              'text' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '<p style="FONT-SIZE: 14pt"  >&#160;Свойства</p>',
+                ),
+              ),
+            ),
+            1 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'eA79848B3',
+                'number' => 'clear',
+                'links' => '',
+                'class' => 'paragraph',
+                'tag' => 'p',
+                'linkId' => 'linkF0634352',
+                'textBlock' => 'true',
+                'source' => 'textBlocks',
+                'link' => '6A84613A83A54934863EF79D8D199DC4',
+                'storedId' => 'e1',
+              ),
+              'attribute' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'class',
+                    'value' => 'paragraph',
+                  ),
+                ),
+              ),
+              'text' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '<p>&#160; 
+                  </p><div id="spreadsheetNonEditablePlace" contentEditable="false" onresizestart="stopResize()">
+                  <table class="spreadsheet" onselectstart="" id="ssBF61E460" ondragstart="event.returnValue = false;" contentEditable="false" style="TABLE-LAYOUT: fixed; Z-INDEX: -50" cellSpacing="0" cellPadding="0" onsenectstart="event.returnValue = false;" name="Свойства">
+                  <colgroup>
+                  <col id="spreadsheet-col-99D3C291" style="WIDTH: 110px" colLetter="A" />
+                  <col id="spreadsheet-col-D620805A" style="WIDTH: 251px" colLetter="B" />
+                  <col id="spreadsheet-col-DB638039" style="WIDTH: 292px" colLetter="C" /></colgroup>
+                  <thead></thead>
+                  <tbody>
+                  <tr id="spreadsheet-row-7D590098" class="spreadsheet-row" style="HEIGHT: auto">
+                  <td class="spreadsheet-cell"></td>
+                  <td class="spreadsheet-cell">Тип документа:</td>
+                  <td class="spreadsheet-cell">',
+                ),
+                1 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlData',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Тип документа',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop08B1D77F-1009-4BFA-8301-852E8397C16E',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Тип документа',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '9685345D-AD77-4902-AB40-F869DBEDBDAB',
+                      ),
+                    ),
+                  ),
+                ),
+                2 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr>
+                  <tr id="spreadsheet-row-4482E9DF" class="spreadsheet-row" style="HEIGHT: auto">
+                  <td class="spreadsheet-cell"></td>
+                  <td class="spreadsheet-cell">Название документа:</td>
+                  <td class="spreadsheet-cell">',
+                ),
+                3 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#additionalParameters',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Название документа',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_showDocumentName',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Название документа',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; TEXT-TRANSFORM: none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '75623900-ABEE-475E-968D-7445A353E30A',
+                      ),
+                    ),
+                  ),
+                ),
+                4 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr>
+                  <tr id="spreadsheet-row-2A4A2BBC" class="spreadsheet-row" style="HEIGHT: auto">
+                  <td class="spreadsheet-cell"></td>
+                  <td class="spreadsheet-cell">Подразделение компании:</td>
+                  <td class="spreadsheet-cell">',
+                ),
+                5 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlData',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Подразделение компании',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop971FFA7F-BDC8-4559-A9D0-F80C052BD26E',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Подразделение компании',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '5FE97157-374E-475F-B8C6-62AF962814F2',
+                      ),
+                    ),
+                  ),
+                ),
+                6 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr>
+                    <tr id="spreadsheet-row-E4DBDE6A" class="spreadsheet-row" style="HEIGHT: auto">
+                    <td class="spreadsheet-cell"></td>
+                    <td class="spreadsheet-cell">Реквизиты утверждающего документа:</td>
+                    <td style="FONT-SIZE: 10pt" class="spreadsheet-cell">',
+                ),
+                7 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlData',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Реквизиты утверждающего документа:',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop0A2D85F0-8CED-4178-8A37-7A91FC7237BC',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Реквизиты утверждающего документа:',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; TEXT-TRANSFORM: none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '3B39F27E-77D1-4056-B120-B036E15E4090',
+                      ),
+                    ),
+                  ),
+                ),
+                8 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr>
+                    <tr id="spreadsheet-row-B48A66D2" class="spreadsheet-row" style="HEIGHT: auto">
+                    <td class="spreadsheet-cell"></td>
+                    <td class="spreadsheet-cell">Колонтитул:</td>
+                    <td style="FONT-SIZE: 10pt" class="spreadsheet-cell">',
+                ),
+                9 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlData',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Колонтитул',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_Catchword',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Колонтитул',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '785D4044-F97C-47CD-8509-72D5732FEE15',
+                      ),
+                    ),
+                  ),
+                ),
+                10 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr>
+                  <tr id="spreadsheet-row-9EEEEBD5" class="spreadsheet-row" style="HEIGHT: auto">
+                  <td class="spreadsheet-cell"></td>
+                  <td class="spreadsheet-cell">Сумма договора/контракта:</td>
+                  <td style="FONT-SIZE: 10pt" class="spreadsheet-cell">',
+                ),
+                11 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlData',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Сумма договора',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_SummaDogovora',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Сумма договора',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => 'FE9326B9-264E-4A09-A650-6BC6C03D479C',
+                      ),
+                    ),
+                  ),
+                ),
+                12 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr>
+                    <tr id="spreadsheet-row-6CBB64A3" class="spreadsheet-row" style="HEIGHT: auto">
+                    <td class="spreadsheet-cell"></td>
+                    <td class="spreadsheet-cell">Статус:</td>
+                    <td style="FONT-SIZE: 10pt" class="spreadsheet-cell">',
+                ),
+                13 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlData',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Статус',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_propBBB1A8A2-FCAE-4CFC-9B48-70AA2255F6EF',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Статус',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '330B980C-40AE-44E0-9640-84F42C4AA8B4',
+                      ),
+                    ),
+                  ),
+                ),
+                14 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr></tbody></table></div><p></p>',
+                ),
+              ),
+            ),
+            2 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'e437F18E4',
+                'number' => 'clear',
+                'links' => '',
+                'class' => 'paragraph',
+                'tag' => 'p',
+                'linkId' => 'linkF0634352',
+                'textBlock' => 'true',
+                'source' => 'textBlocks',
+                'link' => '6A84613A83A54934863EF79D8D199DC4',
+                'storedId' => 'e2',
+              ),
+              'attribute' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'class',
+                    'value' => 'paragraph',
+                  ),
+                ),
+                1 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'style',
+                    'value' => 'FONT-SIZE: 14pt',
+                  ),
+                ),
+              ),
+              'text' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '<p style="FONT-SIZE: 14pt">&#160;Связанные даты</p>',
+                ),
+              ),
+            ),
+            3 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'e1A02F2F0',
+                'number' => 'clear',
+                'links' => '',
+                'class' => 'paragraph',
+                'tag' => 'p',
+                'linkId' => 'linkF0634352',
+                'textBlock' => 'true',
+                'source' => 'textBlocks',
+                'link' => '6A84613A83A54934863EF79D8D199DC4',
+                'storedId' => 'e3',
+              ),
+              'attribute' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'class',
+                    'value' => 'paragraph',
+                  ),
+                ),
+              ),
+              'text' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '<p>&#160; 
+                    </p><div id="spreadsheetNonEditablePlace" contentEditable="false" onresizestart="stopResize()">
+                    <table class="spreadsheet" onselectstart="" id="ss11759C9D" ondragstart="event.returnValue = false;" contentEditable="false" style="TABLE-LAYOUT: fixed; Z-INDEX: -50" cellSpacing="0" cellPadding="0" name="Связанные даты" onsenectstart="event.returnValue = false;">
+                    <colgroup>
+                    <col id="spreadsheet-col-DAD8F961" style="WIDTH: 110px" colLetter="A" />
+                    <col id="spreadsheet-col-53CBFC3D" style="WIDTH: 250px" colLetter="B" />
+                    <col id="spreadsheet-col-5E6E9C65" style="WIDTH: 388px" colLetter="C" /></colgroup>
+                    <thead></thead>
+                    <tbody>
+                    <tr class="spreadsheet-row" id="spreadsheet-row-77B4870A" style="HEIGHT: auto">
+                    <td class="spreadsheet-cell"></td>
+                    <td class="spreadsheet-cell">Дата создания:</td>
+                    <td class="spreadsheet-cell">',
+                ),
+                1 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlData',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Дата создания',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop89A8F6EB-61F0-488D-A0CC-DA79FD9FE0F8',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Дата создания',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => 'CE6FAD89-8322-4244-BE79-4E08B50121FA',
+                      ),
+                    ),
+                  ),
+                ),
+                2 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr>
+                  <tr class="spreadsheet-row" id="spreadsheet-row-A144A7C1" style="HEIGHT: auto">
+                  <td class="spreadsheet-cell"></td>
+                  <td class="spreadsheet-cell">Дата заключения:</td>
+                  <td class="spreadsheet-cell">',
+                ),
+                3 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlData',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'дд.мм.гггг',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop0CAAD507-C8DE-4383-8CFA-F5989092E399',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'дд.мм.гггг',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '63320614-F0E8-471C-B68A-58924F9723FF',
+                      ),
+                    ),
+                  ),
+                ),
+                4 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr>
+              <tr class="spreadsheet-row" id="spreadsheet-row-588798DD" style="HEIGHT: auto">
+              <td class="spreadsheet-cell"></td>
+              <td class="spreadsheet-cell">Дата расторжения:</td>
+              <td class="spreadsheet-cell">',
+                ),
+                5 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlData',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Дата расторжения договора',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop8B704D45-88D4-4265-8334-7F81AF4D5C72',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Дата расторжения договора',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '5E831DC1-0E21-4569-999D-53A87BC00B16',
+                      ),
+                    ),
+                  ),
+                ),
+                6 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr></tbody></table></div><p></p>',
+                ),
+              ),
+            ),
+            4 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'e08FE7AC9',
+                'number' => 'clear',
+                'links' => '',
+                'class' => 'paragraph',
+                'tag' => 'p',
+                'linkId' => 'linkF0634352',
+                'textBlock' => 'true',
+                'source' => 'textBlocks',
+                'link' => '6A84613A83A54934863EF79D8D199DC4',
+                'storedId' => 'e4',
+              ),
+              'attribute' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'class',
+                    'value' => 'paragraph',
+                  ),
+                ),
+                1 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'style',
+                    'value' => 'FONT-SIZE: 14pt',
+                  ),
+                ),
+              ),
+              'text' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '<p style="FONT-SIZE: 14pt">&#160;Связанные пользователи</p>',
+                ),
+              ),
+            ),
+            5 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'eE07BC5A1',
+                'number' => 'clear',
+                'links' => '',
+                'class' => 'paragraph',
+                'tag' => 'p',
+                'linkId' => 'linkF0634352',
+                'textBlock' => 'true',
+                'source' => 'textBlocks',
+                'link' => '6A84613A83A54934863EF79D8D199DC4',
+                'storedId' => 'e5',
+              ),
+              'attribute' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'class',
+                    'value' => 'paragraph',
+                  ),
+                ),
+              ),
+              'text' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '<p>&#160; 
+              </p><div id="spreadsheetNonEditablePlace" contentEditable="false" onresizestart="stopResize()">
+              <table class="spreadsheet" onselectstart="" id="ssABAD7282" ondragstart="event.returnValue = false;" contentEditable="false" style="TABLE-LAYOUT: fixed; Z-INDEX: -50" cellSpacing="0" cellPadding="0" name="Связанные пользователи" onsenectstart="event.returnValue = false;">
+              <colgroup>
+              <col id="spreadsheet-col-4C987738" style="WIDTH: 110px" colLetter="A" />
+              <col id="spreadsheet-col-6A71086C" style="WIDTH: 251px" colLetter="B" />
+              <col id="spreadsheet-col-9AB8953E" style="WIDTH: 385px" colLetter="C" /></colgroup>
+              <thead></thead>
+              <tbody>
+              <tr class="spreadsheet-row" id="spreadsheet-row-03A44291" style="HEIGHT: auto">
+              <td class="spreadsheet-cell"></td>
+              <td class="spreadsheet-cell">Разработчик:</td>
+              <td class="spreadsheet-cell">',
+                ),
+                1 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlData',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Разработчик',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_propC454FCFE-2398-463C-B835-8EC974182F2F',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Разработчик',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => 'B7AEC353-FB96-476B-BF5C-33DDFADED5BE',
+                      ),
+                    ),
+                  ),
+                ),
+                2 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr>
+              <tr class="spreadsheet-row" id="spreadsheet-row-1489649D" style="HEIGHT: auto">
+              <td class="spreadsheet-cell"></td>
+              <td class="spreadsheet-cell">Наименование Стороны 1:</td>
+              <td style="FONT-SIZE: 10pt" class="spreadsheet-cell">',
+                ),
+                3 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlPartB79574A6',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Наименование Стороны',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop23FE2EB0-985A-4842-8F1A-68037C19F362',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Наименование Стороны',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '407F62E6-E4C7-46A4-AA56-0665A113BC37',
+                      ),
+                    ),
+                  ),
+                ),
+                4 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr>
+              <tr class="spreadsheet-row" id="spreadsheet-row-A98E9ED0" style="HEIGHT: auto">
+              <td class="spreadsheet-cell"></td>
+              <td class="spreadsheet-cell">Наименование Стороны 2:</td>
+              <td style="FONT-SIZE: 10pt" class="spreadsheet-cell">',
+                ),
+                5 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                    'lang' => 'lang_ru',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlPart44689473',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Наименование Стороны',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop23FE2EB0-985A-4842-8F1A-68037C19F362',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Наименование Стороны',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => 'E3B04841-4A7E-411A-BDFD-91AAEEB15953',
+                      ),
+                    ),
+                  ),
+                ),
+                6 => 
+                array (
+                  '$' => 
+                  array (
+                    'lang' => 'lang_ru',
+                  ),
+                  '_' => '</td></tr></tbody></table></div><p></p>',
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      '$' => 
+      array (
+        'id' => 'eDocumentContents',
+        'tag' => 'none',
+        'number' => 'clear',
+        'type' => 'linear',
+      ),
+      'dependence' => 
+      array (
+        0 => 
+        array (
+          '$' => 
+          array (
+            'option' => 'oDocumentContents',
+            'condition' => '=',
+            'value' => '1',
+          ),
+        ),
+      ),
+      'e' => 
+      array (
+        0 => 
+        array (
+          '$' => 
+          array (
+            'id' => 'e0',
+            'number' => 'clear',
+            'links' => '',
+            'class' => 'paragraph',
+            'tag' => 'p',
+          ),
+          'attribute' => 
+          array (
+            0 => 
+            array (
+              '$' => 
+              array (
+                'name' => 'style',
+                'value' => 'TEXT-ALIGN: right',
+              ),
+            ),
+            1 => 
+            array (
+              '$' => 
+              array (
+                'name' => 'class',
+                'value' => 'paragraph',
+              ),
+            ),
+          ),
+          'text' => 
+          array (
+            0 => 
+            array (
+              '_' => '<p style="TEXT-ALIGN: right">Приложение&#160;№',
+            ),
+            1 => 
+            array (
+              '$' => 
+              array (
+                'tag' => 'span',
+              ),
+              'attribute' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'source',
+                    'value' => '#xmlData',
+                  ),
+                ),
+                1 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'isVariable',
+                    'value' => 'false',
+                  ),
+                ),
+                2 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'hint',
+                    'value' => '№ Приложения - График арендных платежей',
+                  ),
+                ),
+                3 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'datafld',
+                    'value' => 'al_propA2726DF9-515D-4878-9E0C-2B88FD9AD328',
+                  ),
+                ),
+                4 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'name',
+                    'value' => '№ Приложения - График арендных платежей',
+                  ),
+                ),
+                5 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'title',
+                    'value' => '№ Приложения - График арендных платежей',
+                  ),
+                ),
+                6 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'id',
+                    'value' => '9465C22A-E9C3-4B13-AA17-6DC93743744B',
+                  ),
+                ),
+                7 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'class',
+                    'value' => 'databind',
+                  ),
+                ),
+              ),
+            ),
+            2 => 
+            array (
+              '_' => '&#160;</p>',
+            ),
+          ),
+          'e' => 
+          array (
+            0 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'linkContainere1',
+                'tag' => 'none',
+                'number' => 'clear',
+                'type' => 'linear',
+                'link' => '0BD7B188-D330-4550-A137-611855120E85',
+                'source' => 'textBlocks',
+                'linkId' => 'link9567DAE9',
+              ),
+              'e' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'id' => 'eD0E4927A',
+                    'tag' => 'p',
+                    'number' => 'clear',
+                    'type' => 'linear',
+                    'links' => '',
+                    'class' => 'paragraph',
+                    'linkId' => 'link9567DAE9',
+                    'textBlock' => 'true',
+                    'source' => 'textBlocks',
+                    'link' => '0BD7B188-D330-4550-A137-611855120E85',
+                    'storedId' => 'e1',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'TEXT-ALIGN: right',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'paragraph',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '<p style="TEXT-ALIGN: right">к&#160;',
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                        'lang' => 'lang_ru',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'source',
+                            'value' => '#xmlData',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Наименование документа (д.п.) со строчной буквы',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop08460362-80D4-4B70-A604-2E00C82749CC',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'name',
+                            'value' => 'Наименование документа (д п) со строчной буквы',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Наименование документа (д.п.) со строчной буквы',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '321129FD-8D73-4B2E-B545-661D9A061E51',
+                          ),
+                        ),
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '&#160;№',
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                        'lang' => 'lang_ru',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'source',
+                            'value' => '#xmlData',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => '№ Договора',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_N',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'name',
+                            'value' => '№ Договора',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => '№ Договора',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '214D524F-BB6A-421A-BA2A-DDC1665788A5',
+                          ),
+                        ),
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '&#160;от&#160;',
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                        'lang' => 'lang_ru',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'source',
+                            'value' => '#xmlData',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'дд.мм.гггг',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop0CAAD507-C8DE-4383-8CFA-F5989092E399',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'дд.мм.гггг',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => 'AE8233AE-1CD7-4B0C-A6DC-E94DE2A9FB8E',
+                          ),
+                        ),
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => 'г. </p>',
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            1 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'linkContainere2',
+                'tag' => 'none',
+                'number' => 'clear',
+                'type' => 'linear',
+                'link' => '0D311CB7-7A0F-462D-A9B2-A419E91A8462',
+                'source' => 'textBlocks',
+                'linkId' => 'link5359A702',
+              ),
+              'e' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'id' => 'e874448D3',
+                    'tag' => 'p',
+                    'number' => 'clear',
+                    'type' => 'linear',
+                    'links' => '',
+                    'class' => 'paragraph',
+                    'linkId' => 'link5359A702',
+                    'textBlock' => 'true',
+                    'source' => 'textBlocks',
+                    'link' => '0D311CB7-7A0F-462D-A9B2-A419E91A8462',
+                    'storedId' => 'e1',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'TEXT-ALIGN: right',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'paragraph',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '<p style="TEXT-ALIGN: right">заключенному между ',
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                        'lang' => 'lang_ru',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'source',
+                            'value' => '#xmlPartB79574A6',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Наименование стороны (т.п.)',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_propD7F78A19-3BCB-43D5-88F5-EE625F06E6BE',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Наименование стороны (т.п.)',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'cross',
+                            'value' => 'true',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; TEXT-TRANSFORM: none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => 'CCD48DA5-DD7D-4D39-85FA-B8E7E4824118',
+                          ),
+                        ),
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '&#160;и ',
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                        'lang' => 'lang_ru',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'source',
+                            'value' => '#xmlPart44689473',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Наименование стороны (т.п.)',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_propD7F78A19-3BCB-43D5-88F5-EE625F06E6BE',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Наименование стороны (т.п.)',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'cross',
+                            'value' => 'true',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; TEXT-TRANSFORM: none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '29B02611-49E5-44AC-A6DD-D780655DF977',
+                          ),
+                        ),
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '</p>',
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+        1 => 
+        array (
+          '$' => 
+          array (
+            'id' => 'e5',
+            'number' => 'clear',
+            'links' => '',
+            'class' => 'paragraph',
+            'tag' => 'p',
+          ),
+          'text' => 
+          array (
+            0 => 
+            array (
+              '_' => '<h3 style="FONT-SIZE: 18pt"><strong>График арендных платежей</strong></h3>',
+            ),
+          ),
+          'e' => 
+          array (
+            0 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'e3',
+                'number' => 'clear',
+                'links' => '',
+                'tag' => 'p',
+                'class' => 'paragraph',
+              ),
+              'attribute' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'class',
+                    'value' => 'paragraph',
+                  ),
+                ),
+              ),
+              'text' => 
+              array (
+                0 => 
+                array (
+                  '_' => '<p><br  />
+      </p><div id="spreadsheetNonEditablePlace" contentEditable="false" onresizestart="stopResize()">
+      <table style="Z-INDEX: -50; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; TABLE-LAYOUT: fixed; BORDER-TOP: 0px; BORDER-RIGHT: 0px" ondragstart="event.returnValue = false;" id="ss419A01A8" onselectstart="" class="spreadsheet" contentEditable="false" cellSpacing="0" cellPadding="0" name="График арендных платежей" source="#xmlTableTEDFPbI9PETXUsuO" stringCount="stringCount" version="3" onsenectstart="event.returnValue = false;" hottrack="true">
+      <colgroup>
+      <col style="WIDTH: 0.7cm" id="spreadsheet-col-603A59A6" colLetter="A"  />
+      <col style="WIDTH: 100%" id="spreadsheet-col-C4819998" colLetter="B"  />
+      <col style="WIDTH: 1.6cm" id="spreadsheet-col-7FA5FE1D" colLetter="C"  />
+      <col style="WIDTH: 3.2cm" id="spreadsheet-col-AF8DD414" colLetter="D" dependencies="2.1 И ( 1.1.1 ИЛИ 1.1.2 ) "  />
+      <col style="WIDTH: 1.8cm" id="spreadsheet-col-3E57E418" colLetter="E" dependencies="( 1.1.3 ИЛИ ( 1.1.1 И 2.2 ) ИЛИ ( 1.1.2 И 2.2 ) ) "  />
+      <col style="WIDTH: 1.7cm" id="spreadsheet-col-81B744AB" colLetter="F"  />
+      <col style="WIDTH: 2.9cm" id="spredsheet-col-{69D70459-357A-4A5F-A19D-CF7D39C6BE87}" colLetter="G" dependencies="2.1 И ( 1.1.1 ИЛИ 1.1.2 ) "  />
+      <col style="WIDTH: 2cm" id="spreadsheet-col-0D522FAE" colLetter="H" dependencies="1.1.3 ИЛИ ( 1.1.1 И 2.2 ) ИЛИ ( 2.2 И 1.1.2 ) "  /></colgroup>
+      <thead></thead>
+      <tbody>
+      <tr style="HEIGHT: auto" id="spreadsheet-row-8161035E" class="spreadsheet-row">
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"><strong>№ п/п</strong></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"><strong>Период:&#160;',
+                ),
+                1 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Период аренды',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_PeriodArendy',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Период аренды',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '8F50D55C-32D8-42F5-B8CF-3E133C1F3802',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                2 => 
+                array (
+                  '_' => '</strong></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"><strong>Дата</strong><br  /><strong>&#160;внесения</strong><br  /></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"><strong>Арендная плата&#160;</strong><strong>за кв.м., в т.ч. НДС</strong>&#160;',
+                ),
+                3 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'НДС %',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_RazmerNDS',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'name',
+                        'value' => 'Размер НДС %',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'НДС %',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '9115314B-6CFC-4501-8874-0B6773CCE3B2',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                4 => 
+                array (
+                  '_' => '<strong>%, руб.</strong></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"><strong>Арендная плата&#160;</strong><strong>за кв.м., руб.</strong></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"><strong>Площадь, кв.м.</strong></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; FONT-SIZE: 8pt; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"><strong>Арендная плата, в т.ч. НДС </strong>',
+                ),
+                5 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'НДС %',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_RazmerNDS',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'НДС %',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '4859FAB3-85CD-445F-B499-1C21B15136BD',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                6 => 
+                array (
+                  '_' => '<strong>%, руб.</strong></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"><strong>Арендная плата</strong><strong>, руб.</strong></td></tr>
+      <tr style="HEIGHT: auto" id="667FB03E-03CF-48C8-967B-08E020ABF993" class="spreadsheet-row">
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" id="vgswWOWNLWJCTSuQdZ_00" class="spreadsheet-cell" name="Группа 1" verticalGroup="vgswWOWNLWJCTSuQdZ">',
+                ),
+                7 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlTableTEDFPbI9PETXUsuO',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_Grid6DFD4730-80F6-4066-8E2C-7A097CA6EBAB',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '9B3F8A83-83E4-4126-8F1C-051020B4CB9E',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'vg',
+                        'value' => 'vgswWOWNLWJCTSuQdZ_00',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                8 => 
+                array (
+                  '_' => '</td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell">',
+                ),
+                9 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlTableTEDFPbI9PETXUsuO',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_Grid5B303EBE-3A1B-4AAA-AFC2-0A64F76FA344',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '6AB071AC-8A9A-41B8-A45C-CACDBE9864A9',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'vg',
+                        'value' => 'vgswWOWNLWJCTSuQdZ_00',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                10 => 
+                array (
+                  '_' => '</td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell">',
+                ),
+                11 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlTableTEDFPbI9PETXUsuO',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_Grid62F29A28-07D4-4812-9FE7-6B2E2D0427A0',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '2148A2C9-56A8-4C4F-8815-A6B30AB0F655',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'vg',
+                        'value' => 'vgswWOWNLWJCTSuQdZ_00',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                12 => 
+                array (
+                  '_' => '</td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell">',
+                ),
+                13 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlTableTEDFPbI9PETXUsuO',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop0FF99988-F4E2-456E-9841-C31A17F0E8DA',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => 'FBED0219-7604-414F-BCE9-E06E6B741CBD',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'vg',
+                        'value' => 'vgswWOWNLWJCTSuQdZ_00',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                14 => 
+                array (
+                  '_' => '</td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell">',
+                ),
+                15 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlTableTEDFPbI9PETXUsuO',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop3889E0AA-E3C7-447F-A089-FC5106F1E612',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '268D4F18-092C-4A81-813A-4A2699D95189',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'vg',
+                        'value' => 'vgswWOWNLWJCTSuQdZ_00',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                16 => 
+                array (
+                  '_' => '</td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell">',
+                ),
+                17 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlTableTEDFPbI9PETXUsuO',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop2531835B-4B88-4A5F-B970-4300FDC3DFAE',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '34A6275D-5E2B-43DC-9E98-3DEF20E9B1EF',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'vg',
+                        'value' => 'vgswWOWNLWJCTSuQdZ_00',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                18 => 
+                array (
+                  '_' => '</td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell" qdformula="[xmlTableTEDFPbI9PETXUsuO.al_prop0FF99988-F4E2-456E-9841-C31A17F0E8DA]*[xmlTableTEDFPbI9PETXUsuO.al_prop2531835B-4B88-4A5F-B970-4300FDC3DFAE]">',
+                ),
+                19 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlTableTEDFPbI9PETXUsuO',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_Grid0E3E007D-BE62-4D96-91AE-4A8A223F1D5E',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'formula',
+                        'value' => '[График арендных платежей.Поле ввода в таблице (1)]*[График арендных платежей.Поле ввода в таблице (2)]',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => 'CE9F63AA-EAE9-4679-ADD2-F5C46DB56CE3',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'qdformula',
+                        'value' => '[xmlTableTEDFPbI9PETXUsuO.al_prop0FF99988-F4E2-456E-9841-C31A17F0E8DA]*[xmlTableTEDFPbI9PETXUsuO.al_prop2531835B-4B88-4A5F-B970-4300FDC3DFAE]',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'vg',
+                        'value' => 'vgswWOWNLWJCTSuQdZ_00',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                20 => 
+                array (
+                  '_' => '</td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell" qdformula="[xmlTableTEDFPbI9PETXUsuO.al_prop3889E0AA-E3C7-447F-A089-FC5106F1E612]*[xmlTableTEDFPbI9PETXUsuO.al_prop2531835B-4B88-4A5F-B970-4300FDC3DFAE]">',
+                ),
+                21 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'source',
+                        'value' => '#xmlTableTEDFPbI9PETXUsuO',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_GridB33F2C3D-A375-4C59-818D-06FFBA916D13',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'formula',
+                        'value' => '[График арендных платежей.Поле ввода в таблице (3)]*[График арендных платежей.Поле ввода в таблице (2)]',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '7CCA6926-3466-40E5-ACD4-B818C763AEA8',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'qdformula',
+                        'value' => '[xmlTableTEDFPbI9PETXUsuO.al_prop3889E0AA-E3C7-447F-A089-FC5106F1E612]*[xmlTableTEDFPbI9PETXUsuO.al_prop2531835B-4B88-4A5F-B970-4300FDC3DFAE]',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'vg',
+                        'value' => 'vgswWOWNLWJCTSuQdZ_00',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                22 => 
+                array (
+                  '_' => '</td></tr>
+      <tr style="HEIGHT: auto" id="spreadsheet-row-926E49EF" class="spreadsheet-row">
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: left; BORDER-LEFT: black 1px solid; VERTICAL-ALIGN: middle; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell">Всего арендная плата за&#160;',
+                ),
+                23 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Период аренды',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_PeriodArendy',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Период аренды',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '8339FFB4-8AFF-4358-A1B7-948C92F30F42',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                24 => 
+                array (
+                  '_' => ':</td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell"></td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; FONT-SIZE: 10pt; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell" qdformula="Сумма({Группа 1})">',
+                ),
+                25 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Сумма оплаты',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop5EEDDF2F-D521-4389-99C0-2163540A3DF9',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Сумма оплаты',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'formula',
+                        'value' => 'Сумма({Группа 1})',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => '1827C529-EB9D-45DF-AEDB-2079873E9D1B',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'qdformula',
+                        'value' => 'Сумма({Группа 1})',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                      ),
+                    ),
+                    8 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                26 => 
+                array (
+                  '_' => '</td>
+      <td style="BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center; BORDER-LEFT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid" class="spreadsheet-cell" qdformula="Сумма({Группа 1})">&#160;',
+                ),
+                27 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'span',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'hint',
+                        'value' => 'Сумма оплаты',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'isWithoutSelection',
+                        'value' => 'true',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'datafld',
+                        'value' => 'al_prop5EEDDF2F-D521-4389-99C0-2163540A3DF9',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'title',
+                        'value' => 'Сумма оплаты',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'formula',
+                        'value' => 'Сумма({Группа 1})',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'readonly',
+                        'value' => 'true',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'id',
+                        'value' => 'A1E02A6D-C08C-4105-8A41-AE3D697BABC4',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'qdformula',
+                        'value' => 'Сумма({Группа 1})',
+                      ),
+                    ),
+                    8 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'style',
+                        'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                      ),
+                    ),
+                    9 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'databind',
+                      ),
+                    ),
+                  ),
+                ),
+                28 => 
+                array (
+                  '_' => '</td></tr></tbody></table></div><p><br  /></p>',
+                ),
+              ),
+              'e' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'script',
+                    'links' => '',
+                    'number' => 'clear',
+                    'visible' => '-1',
+                    'targetId' => 'spreadsheet-col-AF8DD414',
+                  ),
+                  'dependence' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '!',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'o9B865EC1',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'and',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'o22641356',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'or',
+                        'option' => 'o1A0222F4',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '<!--//<![CDATA[
+      try {
+      var tabless419A01A8 = document.getElementById("ss419A01A8");
+      if(tabless419A01A8.length == undefined) tabless419A01A8 = [tabless419A01A8];
+      for(var i=0; i<tabless419A01A8.length; i++) {
+      var table = tabless419A01A8[i];
+      var colss419A01A8_F7FA1B7A = $(table).find("#spreadsheet-col-AF8DD414");
+      if(colss419A01A8_F7FA1B7A) {
+      if(table.dataSrc != "") {
+        var tabless419A01A8Src = table.dataSrc;
+        table.dataSrc = "";
+        removeCols(table, colss419A01A8_F7FA1B7A);
+        table.dataSrc = tabless419A01A8Src;
+      }
+      else {
+        removeCols(table, colss419A01A8_F7FA1B7A);
+      }
+      }
+      }
+      } catch(e) {}
+      //]] >-->',
+                    ),
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'type',
+                        'value' => 'text/javascript',
+                      ),
+                    ),
+                  ),
+                ),
+                1 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'script',
+                    'links' => '',
+                    'number' => 'clear',
+                    'visible' => '-1',
+                    'targetId' => 'spreadsheet-col-3E57E418',
+                  ),
+                  'dependence' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '!',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'oA9CF7A84',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'or',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'o22641356',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'and',
+                        'option' => 'oA57FBAEC',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'or',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    8 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'o1A0222F4',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    9 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'and',
+                        'option' => 'oA57FBAEC',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    10 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    11 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    12 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '<!--//<![CDATA[
+      try {
+      var tabless419A01A8 = document.getElementById("ss419A01A8");
+      if(tabless419A01A8.length == undefined) tabless419A01A8 = [tabless419A01A8];
+      for(var i=0; i<tabless419A01A8.length; i++) {
+      var table = tabless419A01A8[i];
+      var colss419A01A8_23A5E785 = $(table).find("#spreadsheet-col-3E57E418");
+      if(colss419A01A8_23A5E785) {
+      if(table.dataSrc != "") {
+        var tabless419A01A8Src = table.dataSrc;
+        table.dataSrc = "";
+        removeCols(table, colss419A01A8_23A5E785);
+        table.dataSrc = tabless419A01A8Src;
+      }
+      else {
+        removeCols(table, colss419A01A8_23A5E785);
+      }
+      }
+      }
+      } catch(e) {}
+      //]] >-->',
+                    ),
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'type',
+                        'value' => 'text/javascript',
+                      ),
+                    ),
+                  ),
+                ),
+                2 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'script',
+                    'links' => '',
+                    'number' => 'clear',
+                    'visible' => '-1',
+                    'targetId' => 'spredsheet-col-{69D70459-357A-4A5F-A19D-CF7D39C6BE87}',
+                  ),
+                  'dependence' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '!',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'o9B865EC1',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'and',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'o22641356',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'or',
+                        'option' => 'o1A0222F4',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '<!--//<![CDATA[
+      try {
+      var tabless419A01A8 = document.getElementById("ss419A01A8");
+      if(tabless419A01A8.length == undefined) tabless419A01A8 = [tabless419A01A8];
+      for(var i=0; i<tabless419A01A8.length; i++) {
+      var table = tabless419A01A8[i];
+      var colss419A01A8_FA18C2EC = $(table).find("#spredsheet-col-{69D70459-357A-4A5F-A19D-CF7D39C6BE87}");
+      if(colss419A01A8_FA18C2EC) {
+      if(table.dataSrc != "") {
+        var tabless419A01A8Src = table.dataSrc;
+        table.dataSrc = "";
+        removeCols(table, colss419A01A8_FA18C2EC);
+        table.dataSrc = tabless419A01A8Src;
+      }
+      else {
+        removeCols(table, colss419A01A8_FA18C2EC);
+      }
+      }
+      }
+      } catch(e) {}
+      //]] >-->',
+                    ),
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'type',
+                        'value' => 'text/javascript',
+                      ),
+                    ),
+                  ),
+                ),
+                3 => 
+                array (
+                  '$' => 
+                  array (
+                    'tag' => 'script',
+                    'links' => '',
+                    'number' => 'clear',
+                    'visible' => '-1',
+                    'targetId' => 'spreadsheet-col-0D522FAE',
+                  ),
+                  'dependence' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '!',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'oA9CF7A84',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'or',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'o22641356',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'and',
+                        'option' => 'oA57FBAEC',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'or',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'oA57FBAEC',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    8 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'and',
+                        'option' => 'o1A0222F4',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    9 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    10 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '<!--//<![CDATA[
+      try {
+      var tabless419A01A8 = document.getElementById("ss419A01A8");
+      if(tabless419A01A8.length == undefined) tabless419A01A8 = [tabless419A01A8];
+      for(var i=0; i<tabless419A01A8.length; i++) {
+      var table = tabless419A01A8[i];
+      var colss419A01A8_0C59DBAB = $(table).find("#spreadsheet-col-0D522FAE");
+      if(colss419A01A8_0C59DBAB) {
+      if(table.dataSrc != "") {
+        var tabless419A01A8Src = table.dataSrc;
+        table.dataSrc = "";
+        removeCols(table, colss419A01A8_0C59DBAB);
+        table.dataSrc = tabless419A01A8Src;
+      }
+      else {
+        removeCols(table, colss419A01A8_0C59DBAB);
+      }
+      }
+      }
+      } catch(e) {}
+      //]] >-->',
+                    ),
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'type',
+                        'value' => 'text/javascript',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            1 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'e7',
+                'number' => 'clear',
+                'links' => '',
+                'tag' => 'none',
+                'type' => 'linear',
+                'class' => 'paragraph',
+                'varcont' => '1',
+              ),
+              'e' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'id' => 'e7-1',
+                    'number' => 'clear',
+                    'links' => '',
+                    'tag' => 'p',
+                    'class' => 'paragraph',
+                    'var' => '1',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'paragraph',
+                      ),
+                    ),
+                  ),
+                  'dependence' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'option' => 'o9B865EC1',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'and',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'o22641356',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'or',
+                        'option' => 'o1A0222F4',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '_' => '<p>Всего арендная плата за&#160;',
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Период аренды',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_PeriodArendy',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Период аренды',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => 'DC0BAA82-A24A-4A91-8315-2C55F13A1AD5',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '_' => '&#160;составляет:&#160;',
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Сумма оплаты',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop5EEDDF2F-D521-4389-99C0-2163540A3DF9',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Сумма оплаты',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'readonly',
+                            'value' => 'true',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'cross',
+                            'value' => 'true',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '04576960-E62F-4141-89D5-F09616287BCC',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '_' => '&#160;(',
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Сумма оплаты прописью',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop2F7FE23C-3BD6-47B1-88CE-9971910041DD',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Сумма оплаты прописью',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'formula',
+                            'value' => 'СуммаПрописью([Сумма оплаты])',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '0794E912-9D6F-4956-AA19-2654EE8D9AE3',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'qdformula',
+                            'value' => 'СуммаПрописью([al_prop5EEDDF2F-D521-4389-99C0-2163540A3DF9])',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '_' => ') руб., в т.ч. НДС&#160;',
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'isVariable',
+                            'value' => 'false',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'НДС %',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_RazmerNDS',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'name',
+                            'value' => 'Размер НДС %',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'НДС %',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '23E56971-7266-46C7-AB76-B5B931C63A5D',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    8 => 
+                    array (
+                      '_' => '% в сумме&#160;',
+                    ),
+                    9 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Сумма НДС',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_SummaNDS',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Сумма НДС',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'formula',
+                            'value' => 'СуммаНдс([Сумма оплаты], [Размер НДС %])',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '35AFD4D4-AC55-4949-BE04-D73141D5AB97',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'qdformula',
+                            'value' => 'СуммаНдс([al_prop5EEDDF2F-D521-4389-99C0-2163540A3DF9], [al_RazmerNDS])',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    10 => 
+                    array (
+                      '_' => '&#160;(',
+                    ),
+                    11 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Сумма НДС прописью',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop95B36276-7F15-475D-AEA8-0440273D985A',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Сумма НДС прописью',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'formula',
+                            'value' => 'СуммаПрописью([Сумма НДС])',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => 'BDDC5F17-161C-45C8-9090-CB39A969CB1D',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'qdformula',
+                            'value' => 'СуммаПрописью([al_SummaNDS])',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    12 => 
+                    array (
+                      '_' => ') руб.</p>',
+                    ),
+                  ),
+                ),
+                1 => 
+                array (
+                  '$' => 
+                  array (
+                    'id' => 'e7-2',
+                    'number' => 'clear',
+                    'links' => '',
+                    'tag' => 'p',
+                    'class' => 'paragraph',
+                    'var' => '1',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'paragraph',
+                      ),
+                    ),
+                  ),
+                  'dependence' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'option' => 'oA57FBAEC',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'and',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => '(',
+                        'option' => 'o22641356',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => 'or',
+                        'option' => 'o1A0222F4',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '$' => 
+                      array (
+                        'operation' => ')',
+                        'option' => '',
+                        'condition' => '',
+                        'value' => '',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '_' => '<p>Всего арендная плата за ',
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Период аренды',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_PeriodArendy',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Период аренды',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '357EF0C1-F326-4284-96B0-B9B7AAD0BB54',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '_' => ' составляет: ',
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Сумма оплаты',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop5EEDDF2F-D521-4389-99C0-2163540A3DF9',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Сумма оплаты',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'readonly',
+                            'value' => 'true',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'cross',
+                            'value' => 'true',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => 'B9520F44-CCE3-4625-AA8A-5F7A58BBBD16',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '_' => ' (',
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Сумма оплаты прописью',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop2F7FE23C-3BD6-47B1-88CE-9971910041DD',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Сумма оплаты прописью',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'formula',
+                            'value' => 'СуммаПрописью([Сумма оплаты])',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => 'C6B9B509-EE60-4E73-8C88-4F66873BE787',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'qdformula',
+                            'value' => 'СуммаПрописью([al_prop5EEDDF2F-D521-4389-99C0-2163540A3DF9])',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '_' => ') руб. НДС не облагается: ',
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'isVariable',
+                            'value' => 'false',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Основание освобождения от НДС',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'name',
+                            'value' => 'Основание освобождения от НДС',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_OsnovanieOsvobojdeniyaOtNDS',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Основание освобождения от НДС',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '86341AE0-18CA-46D2-9BE0-6310C131B51A',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    8 => 
+                    array (
+                      '_' => '.</p>',
+                    ),
+                  ),
+                ),
+                2 => 
+                array (
+                  '$' => 
+                  array (
+                    'id' => 'e7-3',
+                    'number' => 'clear',
+                    'links' => '',
+                    'tag' => 'p',
+                    'class' => 'paragraph',
+                    'var' => '1',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'paragraph',
+                      ),
+                    ),
+                  ),
+                  'dependence' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'option' => 'oA9CF7A84',
+                        'condition' => '=',
+                        'value' => '-1',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '_' => '<p>Всего арендная плата за ',
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Период аренды',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_PeriodArendy',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Период аренды',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => 'C823B465-C405-450C-B82F-8B2B3746E3B0',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '_' => ' составляет: ',
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Сумма оплаты',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop5EEDDF2F-D521-4389-99C0-2163540A3DF9',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Сумма оплаты',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'readonly',
+                            'value' => 'true',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'cross',
+                            'value' => 'true',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '4F70FA6F-E7D5-49DB-BEC3-767061C9CB55',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '_' => ' (',
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Сумма оплаты прописью',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop2F7FE23C-3BD6-47B1-88CE-9971910041DD',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Сумма оплаты прописью',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'formula',
+                            'value' => 'СуммаПрописью([Сумма оплаты])',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => 'F5DCA091-CDB2-430F-B831-66A63D6421F9',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'qdformula',
+                            'value' => 'СуммаПрописью([al_prop5EEDDF2F-D521-4389-99C0-2163540A3DF9])',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '_' => ') руб.  </p>',
+                    ),
+                  ),
+                ),
+              ),
+              'attribute' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'name' => 'class',
+                    'value' => 'paragraph',
+                  ),
+                ),
+              ),
+            ),
+            2 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'linkContainere3744A2F6',
+                'tag' => 'none',
+                'number' => 'clear',
+                'type' => 'linear',
+                'link' => 'B166771FB8F34889953122521E6083C4',
+                'source' => 'textBlocks',
+                'linkId' => 'linkE2EECF91',
+              ),
+              'e' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'id' => 'eC3E039EF',
+                    'number' => 'clear',
+                    'links' => '',
+                    'class' => 'paragraph',
+                    'tag' => 'p',
+                    'linkId' => 'linkE2EECF91',
+                    'textBlock' => 'true',
+                    'source' => 'textBlocks',
+                    'link' => 'B166771FB8F34889953122521E6083C4',
+                    'storedId' => 'e0',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'paragraph',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'lang' => 'lang_ru',
+                      ),
+                      '_' => '<p>&#160;
+      </p><p>Подписи сторон:</p>
+      <p>&#160;</p>',
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            3 => 
+            array (
+              '$' => 
+              array (
+                'id' => 'linkContainere9',
+                'tag' => 'none',
+                'number' => 'clear',
+                'type' => 'linear',
+                'link' => 'C9603CE2-43C7-44D7-8FEB-8B371EAB1D03',
+                'source' => 'textBlocks',
+                'linkId' => 'linkB44E9E83',
+              ),
+              'e' => 
+              array (
+                0 => 
+                array (
+                  '$' => 
+                  array (
+                    'id' => 'e81CCB09D',
+                    'tag' => 'p',
+                    'number' => 'clear',
+                    'type' => 'linear',
+                    'links' => '',
+                    'class' => 'paragraph',
+                    'linkId' => 'linkB44E9E83',
+                    'textBlock' => 'true',
+                    'source' => 'textBlocks',
+                    'link' => 'C9603CE2-43C7-44D7-8FEB-8B371EAB1D03',
+                    'storedId' => 'e1',
+                  ),
+                  'attribute' => 
+                  array (
+                    0 => 
+                    array (
+                      '$' => 
+                      array (
+                        'name' => 'class',
+                        'value' => 'paragraph',
+                      ),
+                    ),
+                  ),
+                  'text' => 
+                  array (
+                    0 => 
+                    array (
+                      '_' => '<p>
+      </p><div id="spreadsheetNonEditablePlace" contentEditable="false" onresizestart="stopResize()">
+      <table style="Z-INDEX: -50; TABLE-LAYOUT: fixed" ondragstart="event.returnValue = false;" id="ssFA8AE1A6" onselectstart="" class="spreadsheet" contentEditable="false" cellSpacing="0" cellPadding="0" onsenectstart="event.returnValue = false;" name="Подписи сторон"  version="3">
+      <colgroup>
+      <col style="WIDTH: 50%" id="spreadsheet-col-1745ECE8" colLetter="A"  />
+      <col style="WIDTH: 50%" id="spreadsheet-col-D2244504" colLetter="B"  /></colgroup>
+      <thead></thead>
+      <tbody>
+      <tr style="HEIGHT: auto" id="spreadsheet-row-9FA2883E" class="spreadsheet-row">
+      <td style="BORDER-BOTTOM: medium none; TEXT-ALIGN: left; BORDER-LEFT: medium none; FONT-SIZE: 10pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none" class="spreadsheet-cell" contentEditable="true">
+      <p>От имени "',
+                    ),
+                    1 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'source',
+                            'value' => '#xmlPartB79574A6',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Сторона (р.п.)',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_propD0991EE5-7354-4BEB-83AB-182671B4EBC1',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Сторона (р.п.)',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'readonly',
+                            'value' => 'true',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '2E5B18CE-EE38-470B-BD34-0815B5930C4D',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    2 => 
+                    array (
+                      '_' => '" </p>
+      <p>&#160;</p>
+      <p>__________&#160;',
+                    ),
+                    3 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'source',
+                            'value' => '#xmlPartB79574A6',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'ФИО подписанта',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop329E030E-412F-45C6-A6E0-A385F76A1494',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'name',
+                            'value' => 'ФИО подписанта',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'ФИО подписанта',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => '9388C4E9-E7AD-4146-B49C-164AE52B9E10',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    4 => 
+                    array (
+                      '_' => '<br  /></p></td>
+      <td style="BORDER-BOTTOM: medium none; TEXT-ALIGN: right; BORDER-LEFT: medium none; FONT-SIZE: 10pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none" class="spreadsheet-cell" contentEditable="true">
+      <p>От имени "',
+                    ),
+                    5 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'source',
+                            'value' => '#xmlPart44689473',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'Сторона (р.п.)',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_propD0991EE5-7354-4BEB-83AB-182671B4EBC1',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'Сторона (р.п.)',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'readonly',
+                            'value' => 'true',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => 'A633244D-D73B-40C5-A03E-04F0509AAAD4',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    6 => 
+                    array (
+                      '_' => '"&#160;</p>
+      <p>&#160;</p>
+      <p>__________&#160;',
+                    ),
+                    7 => 
+                    array (
+                      '$' => 
+                      array (
+                        'tag' => 'span',
+                      ),
+                      'attribute' => 
+                      array (
+                        0 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'source',
+                            'value' => '#xmlPart44689473',
+                          ),
+                        ),
+                        1 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'hint',
+                            'value' => 'ФИО подписанта',
+                          ),
+                        ),
+                        2 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'datafld',
+                            'value' => 'al_prop329E030E-412F-45C6-A6E0-A385F76A1494',
+                          ),
+                        ),
+                        3 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'name',
+                            'value' => 'ФИО подписанта',
+                          ),
+                        ),
+                        4 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'title',
+                            'value' => 'ФИО подписанта',
+                          ),
+                        ),
+                        5 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'id',
+                            'value' => 'D4F2797C-3E27-411C-A8EF-88A3DC549AF9',
+                          ),
+                        ),
+                        6 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'style',
+                            'value' => 'BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none',
+                          ),
+                        ),
+                        7 => 
+                        array (
+                          '$' => 
+                          array (
+                            'name' => 'class',
+                            'value' => 'databind',
+                          ),
+                        ),
+                      ),
+                    ),
+                    8 => 
+                    array (
+                      '_' => '<br  />&#160;</p></td></tr></tbody></table></div><p></p>',
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'attribute' => 
+          array (
+            0 => 
+            array (
+              '$' => 
+              array (
+                'name' => 'style',
+                'value' => 'FONT-SIZE: 18pt',
+              ),
+            ),
+            1 => 
+            array (
+              '$' => 
+              array (
+                'name' => 'class',
+                'value' => 'paragraph',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'attribute' => 
+      array (
+        0 => 
+        array (
+          '$' => 
+          array (
+            'name' => 'style',
+            'value' => 'display: none;',
+          ),
+        ),
+      ),
+    ),
+  ),
+)
