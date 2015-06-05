@@ -6,7 +6,9 @@ import (
 	"log"
 	"reflect"
 	"strconv"
+	"strings"
 
+	"github.com/PuerkitoBio/goquery"
 	"github.com/bikbah/go-php-serialize/phpserialize"
 )
 
@@ -20,7 +22,7 @@ var (
 
 func main() {
 	// Read php serialized file
-	dat, err := ioutil.ReadFile("1")
+	dat, err := ioutil.ReadFile("2")
 	if err != nil {
 		log.Fatalf("Read file error: %v", err)
 	}
@@ -47,9 +49,6 @@ func main() {
 }
 
 func parseRawMap(m map[interface{}]interface{}) map[string]interface{} {
-	// if depth > MaxDepth {
-	// 	return
-	// }
 	res := make(map[string]interface{})
 
 	for k, v := range m {
@@ -78,12 +77,26 @@ func parseRawMap(m map[interface{}]interface{}) map[string]interface{} {
 func getText(m map[string]interface{}) (res string) {
 
 	res = ""
+	eID := ""
+
+	// Append ID of e
+	dollarMapRaw, ok := m["$"]
+	if !ok {
+		log.Fatal("No $ field of e element..")
+	}
+	dollarMap, ok := dollarMapRaw.(map[string]interface{})
+	checkAssert(ok)
+	if id, ok := dollarMap["id"]; ok {
+		// res += fmt.Sprintf("id--->%v/ ", id)
+		eID = fmt.Sprintf("id--->%v/ ", id)
+	}
 
 	// Appending own texts first
 	textMapRaw, ok := m["text"]
 	if ok {
 		textMap, ok := textMapRaw.(map[string]interface{})
 		checkAssert(ok)
+		textBody := ""
 		for i := 0; i < len(textMap); i++ {
 			textChildRaw, ok := textMap[strconv.Itoa(i)]
 			if !ok {
@@ -91,11 +104,30 @@ func getText(m map[string]interface{}) (res string) {
 			}
 			textChild, ok := textChildRaw.(map[string]interface{})
 			checkAssert(ok)
-			if textBody, ok := textChild["_"]; ok {
-				res += fmt.Sprintf("%v", textBody)
+			if textBodyRaw, ok := textChild["_"]; ok {
+				textBody += fmt.Sprintf("%v", textBodyRaw)
 			}
 		}
+
+		// Parse raw text of each element
+		doc, err := goquery.NewDocumentFromReader(strings.NewReader(textBody))
+		if err != nil {
+			log.Fatalf("Getting goquery document from string error, %v", err)
+		}
+		// eID = eID
+		selection := doc.SetAttr("id", eID)
+		fmt.Println(selection.Html())
+		// textBody = doc.Text()
+		// if doc.Size() > 1 {
+		// 	fmt.Println("More than one elem")
+		// }
+
+		res += textBody
 	}
+
+	// if res != "" {
+	// 	fmt.Printf("%s\n\n", res)
+	// }
 
 	// Then append texts of children
 	childrenRaw, ok := m["e"]
