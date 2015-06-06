@@ -125,9 +125,9 @@ func getText(m map[string]interface{}) (res string) {
 		res += textBody
 	}
 
-	// if res != "" {
-	// 	fmt.Printf("%s\n\n", res)
-	// }
+	if res != "" {
+		fmt.Printf("%s\n\n", res)
+	}
 
 	// Then append texts of children
 	childrenRaw, ok := m["e"]
