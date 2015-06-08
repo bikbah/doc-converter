@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"math/rand"
 	"reflect"
 	"strconv"
 	"strings"
@@ -117,12 +118,14 @@ func getText(m map[string]interface{}) (res string) {
 			log.Fatalf("Parse html nodes error: %v", err)
 		}
 		htmlBody := rootNode.FirstChild.LastChild
-		htmlBody.FirstChild.Attr = append(htmlBody.FirstChild.Attr, html.Attribute{Key: "id", Val: eID})
 
 		var buf bytes.Buffer
+		paragraphID := eID
 		for c := htmlBody.FirstChild; c != nil; c = c.NextSibling {
+			c.Attr = append(c.Attr, html.Attribute{Key: "id", Val: paragraphID})
 			html.Render(&buf, c)
 			buf.WriteString("\n")
+			paragraphID = getRandomID()
 		}
 
 		res += buf.String()
@@ -150,6 +153,16 @@ func getText(m map[string]interface{}) (res string) {
 		res += getText(child)
 	}
 	return
+}
+
+func getRandomID() string {
+	// r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	res := ""
+	for i := 0; i < 8; i++ {
+		res += fmt.Sprintf("%x", rand.Intn(16))
+	}
+
+	return res
 }
 
 func tmpFunc(m map[string]interface{}) {
