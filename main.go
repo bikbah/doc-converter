@@ -51,6 +51,7 @@ func main() {
 
 }
 
+// Recursive function parseRawMap parses raw map.
 func parseRawMap(m map[interface{}]interface{}) map[string]interface{} {
 	res := make(map[string]interface{})
 
@@ -77,6 +78,10 @@ func parseRawMap(m map[interface{}]interface{}) map[string]interface{} {
 	return res
 }
 
+// Recursive function getText gets whole text from e, parse it as HTML,
+// add ID attribute to children paragraphs,
+// then calls getText recursively to its children e.
+// Returns all paragraphs as string.
 func getText(m map[string]interface{}) (res string) {
 
 	res = ""
@@ -132,10 +137,6 @@ func getText(m map[string]interface{}) (res string) {
 		// res += textBody
 	}
 
-	// if res != "" {
-	// 	fmt.Printf("%s\n\n", res)
-	// }
-
 	// Then append texts of children
 	childrenRaw, ok := m["e"]
 	if !ok {
@@ -155,6 +156,7 @@ func getText(m map[string]interface{}) (res string) {
 	return
 }
 
+// getRandomID returns random hex ID with length=8.
 func getRandomID() string {
 	// r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	res := ""
@@ -186,6 +188,7 @@ func tmpFunc(m map[string]interface{}) {
 	}
 }
 
+// checkAssert panics if not ok.
 func checkAssert(ok bool) {
 	if !ok {
 		panic("assert")
@@ -193,6 +196,7 @@ func checkAssert(ok bool) {
 	}
 }
 
+// saveData wraps text with html tags and writes it to out.html file.
 func saveData(text string) {
 	html := `<html><head><meta charset="utf8"></head><body>` + text + `</body></html>`
 	if err := ioutil.WriteFile("out.html", []byte(html), 0644); err != nil {
