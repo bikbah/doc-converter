@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"io/ioutil"
 	"log"
@@ -8,7 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/PuerkitoBio/goquery"
+	"golang.org/x/net/html"
+
 	"github.com/bikbah/go-php-serialize/phpserialize"
 )
 
@@ -88,7 +90,7 @@ func getText(m map[string]interface{}) (res string) {
 	checkAssert(ok)
 	if id, ok := dollarMap["id"]; ok {
 		// res += fmt.Sprintf("id--->%v/ ", id)
-		eID = fmt.Sprintf("id--->%v/ ", id)
+		eID = fmt.Sprintf("%v", id)
 	}
 
 	// Appending own texts first
@@ -109,25 +111,27 @@ func getText(m map[string]interface{}) (res string) {
 			}
 		}
 
-		// Parse raw text of each element
-		doc, err := goquery.NewDocumentFromReader(strings.NewReader(textBody))
+		// Parse raw text and get HTML nodes
+		rootNode, err := html.Parse(strings.NewReader(textBody))
 		if err != nil {
-			log.Fatalf("Getting goquery document from string error, %v", err)
+			log.Fatalf("Parse html nodes error: %v", err)
 		}
-		// eID = eID
-		selection := doc.SetAttr("id", eID)
-		fmt.Println(selection.Html())
-		// textBody = doc.Text()
-		// if doc.Size() > 1 {
-		// 	fmt.Println("More than one elem")
-		// }
+		htmlBody := rootNode.FirstChild.LastChild
+		htmlBody.FirstChild.Attr = append(htmlBody.FirstChild.Attr, html.Attribute{Key: "id", Val: eID})
 
-		res += textBody
+		var buf bytes.Buffer
+		for c := htmlBody.FirstChild; c != nil; c = c.NextSibling {
+			html.Render(&buf, c)
+			buf.WriteString("\n")
+		}
+
+		res += buf.String()
+		// res += textBody
 	}
 
-	if res != "" {
-		fmt.Printf("%s\n\n", res)
-	}
+	// if res != "" {
+	// 	fmt.Printf("%s\n\n", res)
+	// }
 
 	// Then append texts of children
 	childrenRaw, ok := m["e"]
