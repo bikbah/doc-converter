@@ -9,6 +9,7 @@ import (
 	"reflect"
 	"strconv"
 	"strings"
+	"time"
 
 	"golang.org/x/net/html"
 
@@ -21,7 +22,12 @@ const (
 
 var (
 	keysCount map[string]int
+	r         *rand.Rand
 )
+
+func init() {
+	r = rand.New(rand.NewSource(time.Now().UnixNano()))
+}
 
 func main() {
 	// Read php serialized file
@@ -161,10 +167,10 @@ func getRandomID() string {
 	// r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	res := ""
 	for i := 0; i < 8; i++ {
-		res += fmt.Sprintf("%x", rand.Intn(16))
+		res += fmt.Sprintf("%x", r.Intn(16))
 	}
 
-	return res
+	return "e" + strings.ToUpper(res)
 }
 
 func tmpFunc(m map[string]interface{}) {
