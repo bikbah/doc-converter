@@ -54,7 +54,7 @@ func main() {
 	m, ok := res.(map[interface{}]interface{})
 	checkAssert(ok)
 	convertedMap := parseRawMap(m)
-	wholeText := getText(convertedMap)
+	wholeText := getText(convertedMap, 0)
 	saveData(wholeText)
 	// fmt.Println(wholeText)
 
@@ -96,12 +96,13 @@ func parseRawMap(m map[interface{}]interface{}) map[string]interface{} {
 // add ID attribute to children paragraphs,
 // then calls getText recursively to its children e.
 // Returns all paragraphs as string.
-func getText(m map[string]interface{}) (res string) {
+func getText(m map[string]interface{}, depth int) (res string) {
 
 	res = ""
 	eID := ""
+	paragraphDepth := depth
 
-	// Append ID of e
+	// Get ID of e
 	dollarMapRaw, ok := m["$"]
 	if !ok {
 		log.Fatal("No $ field of e element..")
@@ -111,6 +112,11 @@ func getText(m map[string]interface{}) (res string) {
 	if id, ok := dollarMap["id"]; ok {
 		// res += fmt.Sprintf("id--->%v/ ", id)
 		eID = fmt.Sprintf("%v", id)
+	}
+
+	// Check if e is some variant
+	if _, ok := dollarMap["var"]; ok {
+		paragraphDepth--
 	}
 
 	// Appending own texts first
@@ -142,6 +148,7 @@ func getText(m map[string]interface{}) (res string) {
 		paragraphID := eID
 		for c := htmlBody.FirstChild; c != nil; c = c.NextSibling {
 			c.Attr = append(c.Attr, html.Attribute{Key: "id", Val: paragraphID})
+			c.Attr = append(c.Attr, html.Attribute{Key: "dd-level", Val: strconv.Itoa(paragraphDepth)})
 			html.Render(&buf, c)
 			buf.WriteString("\n")
 			paragraphID = getRandomID()
@@ -165,7 +172,7 @@ func getText(m map[string]interface{}) (res string) {
 		}
 		child, ok := childRaw.(map[string]interface{})
 		checkAssert(ok)
-		res += getText(child)
+		res += getText(child, depth+1)
 	}
 	return
 }
