@@ -1,8 +1,8 @@
+// TODO: put into p-hs <span> elements with their attributes
 // TODO: put valid levels to paragraphs
 // TODO: put attributes to p-hs from attribute array
 // TODO: put valid numeration to p-hs
 // TODO: exclude spreadSheetTable shit from tables
-// TODO: put into p-hs <span> elements with their attributes
 // TODO: make valid groups
 // TODO: implement dependencies
 
@@ -56,13 +56,6 @@ func main() {
 	convertedMap := parseRawMap(m)
 	wholeText := getText(convertedMap, 0)
 	saveData(wholeText)
-	// fmt.Println(wholeText)
-
-	// See key types
-	// keysCount = make(map[string]int)
-	// tmpFunc(convertedMap)
-	// fmt.Println(keysCount)
-
 }
 
 // Recursive function parseRawMap parses raw map.
@@ -122,40 +115,7 @@ func getText(m map[string]interface{}, depth int) (res string) {
 	// Appending own texts first
 	textMapRaw, ok := m["text"]
 	if ok {
-		textMap, ok := textMapRaw.(map[string]interface{})
-		checkAssert(ok)
-		textBody := ""
-		for i := 0; i < len(textMap); i++ {
-			textChildRaw, ok := textMap[strconv.Itoa(i)]
-			if !ok {
-				log.Fatal("getText error")
-			}
-			textChild, ok := textChildRaw.(map[string]interface{})
-			checkAssert(ok)
-			if textBodyRaw, ok := textChild["_"]; ok {
-				textBody += fmt.Sprintf("%v", textBodyRaw)
-			}
-		}
-
-		// Parse raw text and get HTML nodes
-		rootNode, err := html.Parse(strings.NewReader(textBody))
-		if err != nil {
-			log.Fatalf("Parse html nodes error: %v", err)
-		}
-		htmlBody := rootNode.FirstChild.LastChild
-
-		var buf bytes.Buffer
-		paragraphID := eID
-		for c := htmlBody.FirstChild; c != nil; c = c.NextSibling {
-			c.Attr = append(c.Attr, html.Attribute{Key: "id", Val: paragraphID})
-			c.Attr = append(c.Attr, html.Attribute{Key: "dd-level", Val: strconv.Itoa(paragraphDepth)})
-			html.Render(&buf, c)
-			buf.WriteString("\n")
-			paragraphID = getRandomID()
-		}
-
-		res += buf.String()
-		// res += textBody
+		res += getText_(textMapRaw, eID, paragraphDepth)
 	}
 
 	// Then append texts of children
@@ -175,6 +135,46 @@ func getText(m map[string]interface{}, depth int) (res string) {
 		res += getText(child, depth+1)
 	}
 	return
+}
+
+func getText_(textMapRaw interface{}, eID string, paragraphDepth int) string {
+	res := ""
+
+	textMap, ok := textMapRaw.(map[string]interface{})
+	checkAssert(ok)
+	textBody := ""
+	for i := 0; i < len(textMap); i++ {
+		textChildRaw, ok := textMap[strconv.Itoa(i)]
+		if !ok {
+			log.Fatal("getText error")
+		}
+		textChild, ok := textChildRaw.(map[string]interface{})
+		checkAssert(ok)
+		if textBodyRaw, ok := textChild["_"]; ok {
+			textBody += fmt.Sprintf("%v", textBodyRaw)
+		}
+	}
+
+	// Parse raw text and get HTML nodes
+	rootNode, err := html.Parse(strings.NewReader(textBody))
+	if err != nil {
+		log.Fatalf("Parse html nodes error: %v", err)
+	}
+	htmlBody := rootNode.FirstChild.LastChild
+
+	var buf bytes.Buffer
+	paragraphID := eID
+	for c := htmlBody.FirstChild; c != nil; c = c.NextSibling {
+		c.Attr = append(c.Attr, html.Attribute{Key: "id", Val: paragraphID})
+		c.Attr = append(c.Attr, html.Attribute{Key: "dd-level", Val: strconv.Itoa(paragraphDepth)})
+		html.Render(&buf, c)
+		buf.WriteString("\n")
+		paragraphID = getRandomID()
+	}
+
+	res += buf.String()
+
+	return res
 }
 
 // getRandomID returns random hex ID with length=8.
