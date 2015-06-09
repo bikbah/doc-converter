@@ -108,7 +108,7 @@ func getText(m map[string]interface{}, depth int) (res string) {
 	// Appending own texts first
 	textMap, ok := getElemByKey("text", m)
 	if ok {
-		res += getText_(textMap, eID, paragraphDepth)
+		res += getParagraphText(textMap, eID, paragraphDepth)
 	}
 
 	// Then append texts of children
@@ -126,7 +126,7 @@ func getText(m map[string]interface{}, depth int) (res string) {
 	return
 }
 
-func getText_(textMap map[string]interface{}, eID string, paragraphDepth int) string {
+func getParagraphText(textMap map[string]interface{}, eID string, paragraphDepth int) string {
 
 	textBody := ""
 	for i := 0; i < len(textMap); i++ {
