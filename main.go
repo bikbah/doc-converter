@@ -1,11 +1,10 @@
-// TODO: put into p-hs <span> elements with their attributes
+// TODO: valid attributes of spans
 // TODO: put valid levels to paragraphs
 // TODO: put attributes to p-hs from attribute array
 // TODO: put valid numeration to p-hs
 // TODO: exclude spreadSheetTable shit from tables
 // TODO: make valid groups
 // TODO: implement dependencies
-// TODO: valid attributes of spans
 
 package main
 
