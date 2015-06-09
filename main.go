@@ -1,4 +1,3 @@
-// TODO: valid attributes of spans
 // TODO: put valid levels to paragraphs
 // TODO: put attributes to p-hs from attribute array
 // TODO: put valid numeration to p-hs
@@ -156,7 +155,7 @@ func getText_(textMap map[string]interface{}, eID string, paragraphDepth int) st
 		c.Attr = append(c.Attr, html.Attribute{Key: "dd-level", Val: strconv.Itoa(paragraphDepth)})
 		html.Render(&buf, c)
 		buf.WriteString("\n")
-		paragraphID = getRandomID()
+		paragraphID = getRandomID(8)
 	}
 
 	return buf.String()
@@ -181,6 +180,7 @@ func getSpan(m map[string]interface{}) string {
 		log.Fatalf("Parse span element error: %v", err)
 	}
 	spanNode := rootNode.FirstChild.LastChild.FirstChild
+	attrMapStr := make(map[string]string)
 	for i := 0; i < len(attrMap); i++ {
 		attr, ok := getElemByKey(strconv.Itoa(i), attrMap)
 		if !ok {
@@ -200,11 +200,63 @@ func getSpan(m map[string]interface{}) string {
 		}
 
 		attrNameStr := fmt.Sprintf("%v", attrName)
+		attrNameStr = strings.ToLower(attrNameStr)
 		attrValueStr := fmt.Sprintf("%v", attrValue)
+		attrMapStr[attrNameStr] = attrValueStr
+	}
+
+	datafld, ok := attrMapStr["datafld"]
+	if !ok {
+		log.Fatal("Span has no datafld attribute..")
+	}
+	spanNode.Attr = append(spanNode.Attr,
+		html.Attribute{
+			Key: "dd-field",
+			Val: datafld,
+		})
+
+	id, ok := attrMapStr["id"]
+	if !ok {
+		id = "df" + getRandomID(16)
+	}
+	spanNode.Attr = append(spanNode.Attr,
+		html.Attribute{
+			Key: "id",
+			Val: id,
+		})
+
+	if source, ok := attrMapStr["source"]; ok {
 		spanNode.Attr = append(spanNode.Attr,
 			html.Attribute{
-				Key: attrNameStr,
-				Val: attrValueStr,
+				Key: "dd-source",
+				Val: source[1:],
+			})
+	}
+
+	if hint, ok := attrMapStr["hint"]; ok {
+		spanNode.Attr = append(spanNode.Attr,
+			html.Attribute{
+				Key: "dd-hint",
+				Val: hint,
+			})
+	}
+
+	if replText, ok := attrMapStr["replacementtext"]; ok {
+		spanNode.Attr = append(spanNode.Attr,
+			html.Attribute{
+				Key: "dd-replacementtext",
+				Val: replText,
+			})
+	}
+
+	for k, v := range attrMapStr {
+		if k == "rtl" || k == "id" || k == "datafld" || k == "source" || k == "hint" || k == "replacementtext" {
+			continue
+		}
+		spanNode.Attr = append(spanNode.Attr,
+			html.Attribute{
+				Key: k,
+				Val: v,
 			})
 	}
 
@@ -228,10 +280,10 @@ func getElemByKey(key string, m map[string]interface{}) (map[string]interface{},
 }
 
 // getRandomID returns random hex ID with length=8.
-func getRandomID() string {
+func getRandomID(count int) string {
 	// r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	res := ""
-	for i := 0; i < 8; i++ {
+	for i := 0; i < count; i++ {
 		res += fmt.Sprintf("%x", r.Intn(16))
 	}
 
