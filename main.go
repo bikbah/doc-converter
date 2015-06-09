@@ -175,6 +175,15 @@ func getText_(textMapRaw interface{}, eID string, paragraphDepth int) string {
 	res += buf.String()
 
 	return res
+func getElemByKey(key string, m map[string]interface{}) (map[string]interface{}, bool) {
+	elemRaw, ok := m[key]
+	if !ok {
+		return nil, ok
+	}
+
+	elem, ok := elemRaw.(map[string]interface{})
+	checkAssert(ok)
+	return elem, ok
 }
 
 // getRandomID returns random hex ID with length=8.
