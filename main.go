@@ -5,6 +5,7 @@
 // TODO: exclude spreadSheetTable shit from tables
 // TODO: make valid groups
 // TODO: implement dependencies
+// TODO: valid attributes of spans
 
 package main
 
@@ -22,10 +23,6 @@ import (
 	"golang.org/x/net/html"
 
 	"github.com/bikbah/go-php-serialize/phpserialize"
-)
-
-const (
-	MaxDepth int = 3
 )
 
 var (
@@ -96,12 +93,10 @@ func getText(m map[string]interface{}, depth int) (res string) {
 	paragraphDepth := depth
 
 	// Get ID of e
-	dollarMapRaw, ok := m["$"]
+	dollarMap, ok := getElemByKey("$", m)
 	if !ok {
 		log.Fatal("No $ field of e element..")
 	}
-	dollarMap, ok := dollarMapRaw.(map[string]interface{})
-	checkAssert(ok)
 	if id, ok := dollarMap["id"]; ok {
 		// res += fmt.Sprintf("id--->%v/ ", id)
 		eID = fmt.Sprintf("%v", id)
@@ -113,45 +108,37 @@ func getText(m map[string]interface{}, depth int) (res string) {
 	}
 
 	// Appending own texts first
-	textMapRaw, ok := m["text"]
+	textMap, ok := getElemByKey("text", m)
 	if ok {
-		res += getText_(textMapRaw, eID, paragraphDepth)
+		res += getText_(textMap, eID, paragraphDepth)
 	}
 
 	// Then append texts of children
-	childrenRaw, ok := m["e"]
+	children, ok := getElemByKey("e", m)
 	if !ok {
 		return
 	}
-	children, ok := childrenRaw.(map[string]interface{})
-	checkAssert(ok)
 	for i := 0; i < len(children); i++ {
-		childRaw, ok := children[strconv.Itoa(i)]
+		child, ok := getElemByKey(strconv.Itoa(i), children)
 		if !ok {
-			log.Fatal("getText error")
+			log.Fatal("Invalid index in children e of e..")
 		}
-		child, ok := childRaw.(map[string]interface{})
-		checkAssert(ok)
 		res += getText(child, depth+1)
 	}
 	return
 }
 
-func getText_(textMapRaw interface{}, eID string, paragraphDepth int) string {
-	res := ""
+func getText_(textMap map[string]interface{}, eID string, paragraphDepth int) string {
 
-	textMap, ok := textMapRaw.(map[string]interface{})
-	checkAssert(ok)
 	textBody := ""
 	for i := 0; i < len(textMap); i++ {
-		textChildRaw, ok := textMap[strconv.Itoa(i)]
+		textChild, ok := getElemByKey(strconv.Itoa(i), textMap)
 		if !ok {
 			log.Fatal("getText error")
 		}
-		textChild, ok := textChildRaw.(map[string]interface{})
-		checkAssert(ok)
 		if textBodyRaw, ok := textChild["_"]; ok {
 			textBody += fmt.Sprintf("%v", textBodyRaw)
+			continue
 		}
 		textBody += getSpan(textChild)
 	}
@@ -173,9 +160,7 @@ func getText_(textMapRaw interface{}, eID string, paragraphDepth int) string {
 		paragraphID = getRandomID()
 	}
 
-	res += buf.String()
-
-	return res
+	return buf.String()
 }
 
 func getSpan(m map[string]interface{}) string {
@@ -217,7 +202,11 @@ func getSpan(m map[string]interface{}) string {
 
 		attrNameStr := fmt.Sprintf("%v", attrName)
 		attrValueStr := fmt.Sprintf("%v", attrValue)
-		spanNode.Attr = append(spanNode.Attr, html.Attribute{Key: attrNameStr, Val: attrValueStr})
+		spanNode.Attr = append(spanNode.Attr,
+			html.Attribute{
+				Key: attrNameStr,
+				Val: attrValueStr,
+			})
 	}
 
 	var buf bytes.Buffer
@@ -226,6 +215,8 @@ func getSpan(m map[string]interface{}) string {
 	return buf.String()
 }
 
+// getElementByKey gets element by key from m
+// and tries to assert it to map[string]interface{}.
 func getElemByKey(key string, m map[string]interface{}) (map[string]interface{}, bool) {
 	elemRaw, ok := m[key]
 	if !ok {
