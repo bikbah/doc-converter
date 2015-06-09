@@ -1,4 +1,3 @@
-// TODO: put valid levels to paragraphs
 // TODO: put attributes to p-hs from attribute array
 // TODO: put valid numeration to p-hs
 // TODO: exclude spreadSheetTable shit from tables
@@ -101,7 +100,7 @@ func getText(m map[string]interface{}, depth int) (res string) {
 	}
 
 	// Check if e is some variant
-	if _, ok := dollarMap["var"]; ok {
+	if _, ok := dollarMap["var"]; ok || strings.Contains(eID, "linkContainer") {
 		paragraphDepth--
 	}
 
@@ -121,7 +120,7 @@ func getText(m map[string]interface{}, depth int) (res string) {
 		if !ok {
 			log.Fatal("Invalid index in children e of e..")
 		}
-		res += getText(child, depth+1)
+		res += getText(child, paragraphDepth+1)
 	}
 	return
 }
