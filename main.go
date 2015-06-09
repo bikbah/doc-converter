@@ -153,6 +153,7 @@ func getText_(textMapRaw interface{}, eID string, paragraphDepth int) string {
 		if textBodyRaw, ok := textChild["_"]; ok {
 			textBody += fmt.Sprintf("%v", textBodyRaw)
 		}
+		textBody += getSpan(textChild)
 	}
 
 	// Parse raw text and get HTML nodes
@@ -175,6 +176,56 @@ func getText_(textMapRaw interface{}, eID string, paragraphDepth int) string {
 	res += buf.String()
 
 	return res
+}
+
+func getSpan(m map[string]interface{}) string {
+	dollarMap, ok := getElemByKey("$", m)
+	if !ok {
+		return ""
+	}
+	if tag, ok := dollarMap["tag"]; !(ok && tag.(string) == "span") {
+		return ""
+	}
+
+	attrMap, ok := getElemByKey("attribute", m)
+	if !ok {
+		log.Fatal(`Span element has no "attribute" array..`)
+	}
+
+	rootNode, err := html.Parse(strings.NewReader("<span></span>"))
+	if err != nil {
+		log.Fatalf("Parse span element error: %v", err)
+	}
+	spanNode := rootNode.FirstChild.LastChild.FirstChild
+	for i := 0; i < len(attrMap); i++ {
+		attr, ok := getElemByKey(strconv.Itoa(i), attrMap)
+		if !ok {
+			log.Fatal("Invalid index in attribute array of span")
+		}
+		attrDollar, ok := getElemByKey("$", attr)
+		if !ok {
+			log.Fatal("Attribute element has no $ field..")
+		}
+		attrName, ok := attrDollar["name"]
+		if !ok {
+			log.Fatal("Attribute element has no name..")
+		}
+		attrValue, ok := attrDollar["value"]
+		if !ok {
+			log.Fatal("Attribute element has no value..")
+		}
+
+		attrNameStr := fmt.Sprintf("%v", attrName)
+		attrValueStr := fmt.Sprintf("%v", attrValue)
+		spanNode.Attr = append(spanNode.Attr, html.Attribute{Key: attrNameStr, Val: attrValueStr})
+	}
+
+	var buf bytes.Buffer
+	html.Render(&buf, spanNode)
+
+	return buf.String()
+}
+
 func getElemByKey(key string, m map[string]interface{}) (map[string]interface{}, bool) {
 	elemRaw, ok := m[key]
 	if !ok {
