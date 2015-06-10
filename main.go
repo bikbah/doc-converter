@@ -185,11 +185,11 @@ func getParagraphText(textMap map[string]interface{}, eID string, paragraphDepth
 		c.Attr = append(c.Attr, html.Attribute{Key: "id", Val: paragraphID})
 		c.Attr = append(c.Attr, html.Attribute{Key: "dd-level", Val: strconv.Itoa(paragraphDepth)})
 
-		styleAttrMap := make(map[string]string)
+		styleDefault := make(map[string]string)
 		for _, attr := range c.Attr {
 			if attr.Key == "style" {
-				styleAttrMap[attr.Key] = attr.Val
-				log.Println(parseCSS(attr.Val))
+				styleDefault = parseCSS(attr.Val)
+				log.Println(styleDefault)
 			}
 		}
 		for k, v := range attrMap {
