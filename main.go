@@ -1,4 +1,6 @@
 // TODO: put attributes to p-hs from attribute array
+// TODO: combined valid STYLE attribute to paragraphs
+// TODO: repcale <br> with <p>
 // TODO: put valid numeration to p-hs
 // TODO: exclude spreadSheetTable shit from tables
 // TODO: make valid groups
