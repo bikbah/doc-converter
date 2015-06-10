@@ -201,6 +201,25 @@ func getParagraphText(textMap map[string]interface{}, eID string, paragraphDepth
 	return buf.String()
 }
 
+func parseCSS(s string) map[string]string {
+
+	res := make(map[string]string)
+	props := make([]string, 1)
+	if strings.Contains(s, ";") {
+		props = strings.Split(s, ";")
+	} else {
+		props[0] = s
+	}
+	for _, prop := range props {
+		pair := strings.Split(prop, ":")
+		if len(pair) == 2 {
+			res[pair[0]] = pair[1]
+		}
+	}
+
+	return res
+}
+
 func getSpan(m map[string]interface{}) string {
 	dollarMap, ok := getElemByKey("$", m)
 	if !ok {
