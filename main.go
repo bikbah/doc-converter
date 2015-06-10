@@ -106,10 +106,39 @@ func getText(m map[string]interface{}, depth int) (res string) {
 		paragraphDepth--
 	}
 
+	// Get attributes of e
+	attrMapStr := make(map[string]string)
+	attrMap, ok := getElemByKey("attribute", m)
+	if ok {
+		for i := 0; i < len(attrMap); i++ {
+			attr, ok := getElemByKey(strconv.Itoa(i), attrMap)
+			if !ok {
+				log.Fatal("Invalid index in attribute array of span")
+			}
+			attrDollar, ok := getElemByKey("$", attr)
+			if !ok {
+				log.Fatal("Attribute element has no $ field..")
+			}
+			attrName, ok := attrDollar["name"]
+			if !ok {
+				log.Fatal("Attribute element has no name..")
+			}
+			attrValue, ok := attrDollar["value"]
+			if !ok {
+				log.Fatal("Attribute element has no value..")
+			}
+
+			attrNameStr := fmt.Sprintf("%v", attrName)
+			attrValueStr := fmt.Sprintf("%v", attrValue)
+			attrMapStr[attrNameStr] = attrValueStr
+		}
+	}
+
 	// Appending own texts first
 	textMap, ok := getElemByKey("text", m)
 	if ok {
-		res += getParagraphText(textMap, eID, paragraphDepth)
+		res += getParagraphText(textMap, eID, paragraphDepth, attrMapStr)
+		//res += getParagraphText(textMap, eID, paragraphDepth)
 	}
 
 	// Then append texts of children
@@ -127,7 +156,8 @@ func getText(m map[string]interface{}, depth int) (res string) {
 	return
 }
 
-func getParagraphText(textMap map[string]interface{}, eID string, paragraphDepth int) string {
+//func getParagraphText(textMap map[string]interface{}, eID string, paragraphDepth int) string {
+func getParagraphText(textMap map[string]interface{}, eID string, paragraphDepth int, attrMap map[string]string) string {
 
 	textBody := ""
 	for i := 0; i < len(textMap); i++ {
@@ -154,6 +184,15 @@ func getParagraphText(textMap map[string]interface{}, eID string, paragraphDepth
 	for c := htmlBody.FirstChild; c != nil; c = c.NextSibling {
 		c.Attr = append(c.Attr, html.Attribute{Key: "id", Val: paragraphID})
 		c.Attr = append(c.Attr, html.Attribute{Key: "dd-level", Val: strconv.Itoa(paragraphDepth)})
+
+		for k, v := range attrMap {
+			c.Attr = append(c.Attr,
+				html.Attribute{
+					Key: k,
+					Val: v,
+				})
+		}
+
 		html.Render(&buf, c)
 		buf.WriteString("\n")
 		paragraphID = getRandomID(8)
