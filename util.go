@@ -31,3 +31,30 @@ func getRandomID(count int) string {
 
 	return strings.ToUpper(res)
 }
+
+func getCSS(m map[string]string) string {
+	res := ""
+	for k, v := range m {
+		res += k + ":" + v + ";"
+	}
+	return res
+}
+
+func parseCSS(s string) map[string]string {
+
+	res := make(map[string]string)
+	props := make([]string, 1)
+	if strings.Contains(s, ";") {
+		props = strings.Split(s, ";")
+	} else {
+		props[0] = s
+	}
+	for _, prop := range props {
+		pair := strings.Split(prop, ":")
+		if len(pair) == 2 {
+			res[pair[0]] = pair[1]
+		}
+	}
+
+	return res
+}

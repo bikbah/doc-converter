@@ -46,7 +46,7 @@ func main() {
 
 	rootE := E{}
 	rootE.parse(res)
-	log.Println(rootE.e[0].e[0].e[0].text)
+	saveData(rootE.getText())
 
 	// Parse raw data and get text from it
 	// m, ok := res.(map[interface{}]interface{})
@@ -219,33 +219,6 @@ func getParagraphText(textMap map[string]interface{}, eID string, paragraphDepth
 	}
 
 	return buf.String()
-}
-
-func getCSS(m map[string]string) string {
-	res := ""
-	for k, v := range m {
-		res += k + ":" + v + ";"
-	}
-	return res
-}
-
-func parseCSS(s string) map[string]string {
-
-	res := make(map[string]string)
-	props := make([]string, 1)
-	if strings.Contains(s, ";") {
-		props = strings.Split(s, ";")
-	} else {
-		props[0] = s
-	}
-	for _, prop := range props {
-		pair := strings.Split(prop, ":")
-		if len(pair) == 2 {
-			res[pair[0]] = pair[1]
-		}
-	}
-
-	return res
 }
 
 func getSpan(m map[string]interface{}) string {
