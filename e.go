@@ -61,6 +61,27 @@ func (e *E) parse(i interface{}) {
 				e.addChildE(&childE)
 			}
 			break
+
+		case "text":
+			textMap := make(map[string]interface{})
+
+			for textK, textV := range vv {
+				textKStr := fmt.Sprint(textK)
+				textMap[textKStr] = textV
+			}
+
+			for i := 0; i < len(textMap); i++ {
+				textKStr := fmt.Sprint(i)
+				textInterface, ok := textMap[textKStr]
+				if !ok {
+					panic("Invalid index in text array of e..")
+				}
+
+				text := Text{}
+				text.parse(textInterface)
+				e.addText(text)
+			}
+			break
 		}
 	}
 }
