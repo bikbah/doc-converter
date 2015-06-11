@@ -62,6 +62,10 @@ func main() {
 		log.Fatalf("Deserialize data error: %v", err)
 	}
 
+	rootE := E{}
+	rootE.parse(res)
+	log.Println(rootE.dollap)
+
 	// Parse raw data and get text from it
 	m, ok := res.(map[interface{}]interface{})
 	checkAssert(ok)
