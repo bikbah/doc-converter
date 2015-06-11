@@ -70,6 +70,9 @@ func main() {
 func (e *E) addAttribute(attr Attribute) {
 	e.attribute = append(e.attribute, attr)
 }
+func (e *E) addChildE(child *E) {
+	e.e = append(e.e, child)
+}
 }
 
 // Recursive function parseRawMap parses raw map.
