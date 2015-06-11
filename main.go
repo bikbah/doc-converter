@@ -67,6 +67,61 @@ func main() {
 	convertedMap := parseRawMap(m)
 	wholeText := getText(convertedMap, 0)
 	saveData(wholeText)
+}
+
+func (e *E) parse(i interface{}) {
+	m, ok := i.(map[interface{}]interface{})
+	if !ok {
+		panic("Assert error in E.parse()")
+	}
+
+	for k, v := range m {
+		strKey := fmt.Sprintf("%v", k)
+
+		vv, ok := v.(map[interface{}]interface{})
+		if !ok {
+			panic("Assert error in E.parse()")
+		}
+
+		if strKey == "$" {
+			for dollarK, dollarV := range vv {
+				dollarKStr := fmt.Sprint(dollarK)
+				dollarVStr := fmt.Sprint(dollarV)
+
+				e.dollap = make(map[string]string)
+				e.dollap[dollarKStr] = dollarVStr
+			}
+			continue
+		}
+
+		if strKey == "attribute" {
+			for _, attrV := range vv {
+				attr := Attribute{}
+				attr.parse(attrV)
+				e.addAttribute(attr)
+			}
+			continue
+		}
+
+		if strKey == "e" {
+			for i := 0; i < len(vv); i++ {
+				// eKey := strconv.Itoa(i)
+				eKey := fmt.Sprint(i)
+				childInterface, ok := vv[eKey]
+				if !ok {
+					log.Println(i)
+					log.Println(eKey)
+					panic("Invalid index in children e..")
+				}
+				childE := E{}
+				childE.parse(childInterface)
+				e.addChildE(&childE)
+			}
+			continue
+		}
+	}
+}
+
 func (e *E) addAttribute(attr Attribute) {
 	e.attribute = append(e.attribute, attr)
 }
