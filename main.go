@@ -208,6 +208,14 @@ func getParagraphText(textMap map[string]interface{}, eID string, paragraphDepth
 	return buf.String()
 }
 
+func getCSS(m map[string]string) string {
+	res := ""
+	for k, v := range m {
+		res += k + ":" + v + ";"
+	}
+	return res
+}
+
 func parseCSS(s string) map[string]string {
 
 	res := make(map[string]string)
