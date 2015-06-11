@@ -27,6 +27,23 @@ var (
 	r         *rand.Rand
 )
 
+type E struct {
+	dollap    map[string]string
+	attribute []Attribute
+	e         []*E
+}
+
+type Attribute struct {
+	name  string
+	value string
+}
+
+type Text struct {
+	attribute    []Attribute
+	text         string
+	isInputField bool
+}
+
 func init() {
 	r = rand.New(rand.NewSource(time.Now().UnixNano()))
 }
