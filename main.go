@@ -27,12 +27,6 @@ var (
 	r         *rand.Rand
 )
 
-type Text struct {
-	attribute    []Attribute
-	text         string
-	isInputField bool
-}
-
 func init() {
 	r = rand.New(rand.NewSource(time.Now().UnixNano()))
 }
