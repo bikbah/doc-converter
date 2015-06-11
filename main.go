@@ -31,6 +31,7 @@ type E struct {
 	dollap    map[string]string
 	attribute []Attribute
 	e         []*E
+	text      []Text
 }
 
 type Attribute struct {
