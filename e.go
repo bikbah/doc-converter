@@ -90,6 +90,10 @@ func (e *E) addAttribute(attr Attribute) {
 	e.attribute = append(e.attribute, attr)
 }
 
+func (e *E) addText(text Text) {
+	e.text = append(e.text, text)
+}
+
 func (e *E) addChildE(child *E) {
 	e.e = append(e.e, child)
 }
