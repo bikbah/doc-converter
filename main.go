@@ -1,5 +1,3 @@
-// TODO: put attributes to p-hs from attribute array
-// TODO: combined valid STYLE attribute to paragraphs
 // TODO: repcale <br> with <p>
 // TODO: put valid numeration to p-hs
 // TODO: exclude spreadSheetTable shit from tables
@@ -138,7 +136,6 @@ func getText(m map[string]interface{}, depth int) (res string) {
 	textMap, ok := getElemByKey("text", m)
 	if ok {
 		res += getParagraphText(textMap, eID, paragraphDepth, attrMapStr)
-		//res += getParagraphText(textMap, eID, paragraphDepth)
 	}
 
 	// Then append texts of children
@@ -214,7 +211,7 @@ func getParagraphText(textMap map[string]interface{}, eID string, paragraphDepth
 
 		html.Render(&buf, c)
 		buf.WriteString("\n")
-		paragraphID = getRandomID(8)
+		paragraphID = "e" + getRandomID(8)
 	}
 
 	return buf.String()
@@ -365,15 +362,14 @@ func getElemByKey(key string, m map[string]interface{}) (map[string]interface{},
 	return elem, ok
 }
 
-// getRandomID returns random hex ID with length=8.
+// getRandomID returns random hex ID with length=count.
 func getRandomID(count int) string {
-	// r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	res := ""
 	for i := 0; i < count; i++ {
 		res += fmt.Sprintf("%x", r.Intn(16))
 	}
 
-	return "e" + strings.ToUpper(res)
+	return strings.ToUpper(res)
 }
 
 func tmpFunc(m map[string]interface{}) {
