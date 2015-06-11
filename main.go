@@ -64,7 +64,7 @@ func main() {
 
 	rootE := E{}
 	rootE.parse(res)
-	log.Println(rootE.dollap)
+	log.Println(rootE)
 
 	// Parse raw data and get text from it
 	m, ok := res.(map[interface{}]interface{})
@@ -88,41 +88,44 @@ func (e *E) parse(i interface{}) {
 			panic("Assert error in E.parse()")
 		}
 
-		if strKey == "$" {
+		switch strKey {
+		case "$":
+			e.dollap = make(map[string]string)
+
 			for dollarK, dollarV := range vv {
 				dollarKStr := fmt.Sprint(dollarK)
 				dollarVStr := fmt.Sprint(dollarV)
 
-				e.dollap = make(map[string]string)
 				e.dollap[dollarKStr] = dollarVStr
 			}
-			continue
-		}
-
-		if strKey == "attribute" {
+			break
+		case "attribute":
 			for _, attrV := range vv {
 				attr := Attribute{}
 				attr.parse(attrV)
 				e.addAttribute(attr)
 			}
-			continue
-		}
+			break
+		case "e":
+			eMap := make(map[string]interface{})
 
-		if strKey == "e" {
-			for i := 0; i < len(vv); i++ {
-				// eKey := strconv.Itoa(i)
+			for eK, eV := range vv {
+				eKStr := fmt.Sprint(eK)
+				eMap[eKStr] = eV
+			}
+
+			for i := 0; i < len(eMap); i++ {
 				eKey := fmt.Sprint(i)
-				childInterface, ok := vv[eKey]
+				childInterface, ok := eMap[eKey]
 				if !ok {
-					log.Println(i)
-					log.Println(eKey)
 					panic("Invalid index in children e..")
 				}
+
 				childE := E{}
 				childE.parse(childInterface)
 				e.addChildE(&childE)
 			}
-			continue
+			break
 		}
 	}
 }
