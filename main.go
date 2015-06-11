@@ -67,6 +67,9 @@ func main() {
 	convertedMap := parseRawMap(m)
 	wholeText := getText(convertedMap, 0)
 	saveData(wholeText)
+func (e *E) addAttribute(attr Attribute) {
+	e.attribute = append(e.attribute, attr)
+}
 }
 
 // Recursive function parseRawMap parses raw map.
