@@ -46,14 +46,14 @@ func main() {
 
 	rootE := E{}
 	rootE.parse(res)
-	log.Println(rootE)
+	log.Println(rootE.e[0].e[0].e[0].text)
 
 	// Parse raw data and get text from it
-	m, ok := res.(map[interface{}]interface{})
-	checkAssert(ok)
-	convertedMap := parseRawMap(m)
-	wholeText := getText(convertedMap, 0)
-	saveData(wholeText)
+	// m, ok := res.(map[interface{}]interface{})
+	// checkAssert(ok)
+	// convertedMap := parseRawMap(m)
+	// wholeText := getText(convertedMap, 0)
+	// saveData(wholeText)
 }
 
 // Recursive function parseRawMap parses raw map.
