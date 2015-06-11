@@ -92,6 +92,20 @@ func (e *E) parse(i interface{}) {
 			break
 		}
 	}
+
+	e.setLevels()
+}
+
+func (e *E) setLevels() {
+	childrenLevel := e.level + 1
+	if _, ok := e.dollap["varcont"]; ok || strings.Contains(e.dollap["id"], "linkContainer") {
+		childrenLevel--
+	}
+
+	for _, child := range e.e {
+		child.level = childrenLevel
+		child.setLevels()
+	}
 }
 
 func (e *E) addAttribute(attr Attribute) {
