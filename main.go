@@ -3,6 +3,7 @@
 // TODO: exclude spreadSheetTable shit from tables
 // TODO: make valid groups
 // TODO: implement dependencies
+// TODO: implement variants
 
 package main
 
