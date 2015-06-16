@@ -144,6 +144,12 @@ func (e *E) getText() string {
 	}
 
 	for c := htmlBody.FirstChild; c != nil; c = c.NextSibling {
+
+		// replace or <br> with <p></p>
+		if c.Data == "br" {
+			c.Data = "p"
+		}
+
 		c.Attr = append(c.Attr, html.Attribute{Key: "id", Val: paragraphID})
 		c.Attr = append(c.Attr, html.Attribute{Key: "dd-level", Val: strconv.Itoa(e.level)})
 
