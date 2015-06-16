@@ -10,7 +10,7 @@ import (
 )
 
 type E struct {
-	dollap    map[string]string
+	dollar    map[string]string
 	attribute []Attribute
 	e         []*E
 	text      []Text
@@ -33,13 +33,13 @@ func (e *E) parse(i interface{}) {
 
 		switch strKey {
 		case "$":
-			e.dollap = make(map[string]string)
+			e.dollar = make(map[string]string)
 
 			for dollarK, dollarV := range vv {
 				dollarKStr := fmt.Sprint(dollarK)
 				dollarVStr := fmt.Sprint(dollarV)
 
-				e.dollap[dollarKStr] = dollarVStr
+				e.dollar[dollarKStr] = dollarVStr
 			}
 			break
 		case "attribute":
@@ -98,7 +98,7 @@ func (e *E) parse(i interface{}) {
 
 func (e *E) setLevels() {
 	childrenLevel := e.level + 1
-	if _, ok := e.dollap["varcont"]; ok || strings.Contains(e.dollap["id"], "linkContainer") {
+	if _, ok := e.dollar["varcont"]; ok || strings.Contains(e.dollar["id"], "linkContainer") {
 		childrenLevel--
 	}
 
@@ -138,7 +138,7 @@ func (e *E) getText() string {
 
 	var buf bytes.Buffer
 	htmlBody := rootNode.FirstChild.LastChild
-	paragraphID, ok := e.dollap["id"]
+	paragraphID, ok := e.dollar["id"]
 	if !ok {
 		paragraphID = "e" + getRandomID(8)
 	}
