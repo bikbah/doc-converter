@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"log"
 	"strconv"
 	"strings"
 
@@ -131,6 +132,26 @@ func (e *E) getText() string {
 		textBody += text.getText()
 	}
 
+	ddNumeration := 0
+	if oldNumber, ok := e.dollar["number"]; ok {
+		switch oldNumber {
+		case "auto":
+			ddNumeration = -1
+		case "none":
+			ddNumeration = 0
+		case "clear":
+			ddNumeration = 0
+		case "parent":
+			ddNumeration = -1
+		default:
+			log.Printf("Unknown numeration type: %s\n", oldNumber)
+		}
+	}
+
+	if resetNumber, ok := e.dollar["resetnumber"]; ok && resetNumber == "true" {
+		ddNumeration = 1
+	}
+
 	rootNode, err := html.Parse(strings.NewReader(textBody))
 	if err != nil {
 		panic("Parse all text elements error")
@@ -152,6 +173,7 @@ func (e *E) getText() string {
 
 		c.Attr = append(c.Attr, html.Attribute{Key: "id", Val: paragraphID})
 		c.Attr = append(c.Attr, html.Attribute{Key: "dd-level", Val: strconv.Itoa(e.level)})
+		c.Attr = append(c.Attr, html.Attribute{Key: "dd-numeration", Val: strconv.Itoa(ddNumeration)})
 
 		styleDefault := make(map[string]string)
 		styleCustom := make(map[string]string)
