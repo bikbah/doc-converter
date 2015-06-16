@@ -1,7 +1,7 @@
-// TODO: exclude spreadSheetTable shit from tables
 // TODO: make valid groups
 // TODO: implement dependencies
 // TODO: implement variants
+// TODO: exclude spreadSheetTable shit from tables
 
 package main
 
@@ -44,8 +44,10 @@ func main() {
 	}
 
 	rootE := E{}
+	rootE.rawData = make(map[string]interface{})
 	rootE.parse(res)
 	saveData(rootE.getText())
+	saveGroups()
 
 	// Parse raw data and get text from it
 	// m, ok := res.(map[interface{}]interface{})

@@ -11,11 +11,14 @@ import (
 )
 
 type E struct {
-	dollar    map[string]string
-	attribute []Attribute
-	e         []*E
-	text      []Text
-	level     int
+	dollar     map[string]string
+	attribute  []Attribute
+	e          []*E
+	text       []Text
+	level      int
+	dependence []Dependence
+	rawData    map[string]interface{}
+	parent     *E
 }
 
 func (e *E) parse(i interface{}) {
@@ -43,6 +46,7 @@ func (e *E) parse(i interface{}) {
 				e.dollar[dollarKStr] = dollarVStr
 			}
 			break
+
 		case "attribute":
 			for _, attrV := range vv {
 				attr := Attribute{}
@@ -50,6 +54,7 @@ func (e *E) parse(i interface{}) {
 				e.addAttribute(attr)
 			}
 			break
+
 		case "e":
 			eMap := make(map[string]interface{})
 
@@ -66,8 +71,32 @@ func (e *E) parse(i interface{}) {
 				}
 
 				childE := E{}
+				childE.rawData = make(map[string]interface{})
+				childE.parent = e
+
 				childE.parse(childInterface)
 				e.addChildE(&childE)
+			}
+			break
+
+		case "dependence":
+			depMap := make(map[string]interface{})
+
+			for dK, dV := range vv {
+				dKStr := fmt.Sprint(dK)
+				depMap[dKStr] = dV
+			}
+
+			for i := 0; i < len(depMap); i++ {
+				dKey := fmt.Sprint(i)
+				childInterface, ok := depMap[dKey]
+				if !ok {
+					panic("Invalid index in e dependencies..")
+				}
+
+				dep := Dependence{}
+				dep.parse(childInterface)
+				e.addDependence(dep)
 			}
 			break
 
@@ -91,6 +120,9 @@ func (e *E) parse(i interface{}) {
 				e.addText(text)
 			}
 			break
+
+		default:
+			e.rawData[strKey] = v
 		}
 	}
 
@@ -117,19 +149,20 @@ func (e *E) addText(text Text) {
 	e.text = append(e.text, text)
 }
 
+func (e *E) addDependence(dep Dependence) {
+	e.dependence = append(e.dependence, dep)
+}
+
 func (e *E) addChildE(child *E) {
 	e.e = append(e.e, child)
 }
 
-func (e *E) getText() string {
-	attrMap := make(map[string]string)
-	for _, attr := range e.attribute {
-		attrMap[attr.name] = attr.value
-	}
+var linkCont E
 
-	textBody := ""
-	for _, text := range e.text {
-		textBody += text.getText()
+func (e *E) getText() string {
+
+	if id, ok := e.dollar["id"]; ok && strings.Contains(id, "linkContainer") {
+		linkCont = *e
 	}
 
 	ddNumeration := 0
@@ -150,6 +183,16 @@ func (e *E) getText() string {
 
 	if resetNumber, ok := e.dollar["resetnumber"]; ok && resetNumber == "true" {
 		ddNumeration = 1
+	}
+
+	attrMap := make(map[string]string)
+	for _, attr := range e.attribute {
+		attrMap[attr.name] = attr.value
+	}
+
+	textBody := ""
+	for _, text := range e.text {
+		textBody += text.getText()
 	}
 
 	rootNode, err := html.Parse(strings.NewReader(textBody))
@@ -213,5 +256,65 @@ func (e *E) getText() string {
 		childrenText += child.getText()
 	}
 
-	return ownText + childrenText
+	allText := ownText + childrenText
+
+	deps := make([]Dependence, 0)
+	if stID, ok := e.dollar["storedId"]; ok {
+		if depRaw, ok := linkCont.rawData["dependence_"+stID]; ok {
+
+			depRawMap, ok := depRaw.(map[interface{}]interface{})
+			if !ok {
+				panic("Assert error in dependencies..")
+			}
+
+			depStrMap := make(map[string]interface{})
+			for dK, dV := range depRawMap {
+				dKstr := fmt.Sprint(dK)
+				depStrMap[dKstr] = dV
+			}
+
+			for i := 0; i < len(depStrMap); i++ {
+				childDep, ok := depStrMap[strconv.Itoa(i)]
+				if !ok {
+					panic("Invalid index in dependencies..")
+				}
+
+				dep := Dependence{}
+				dep.parse(childDep)
+				deps = append(deps, dep)
+			}
+		}
+	}
+
+	var resultDeps []Dependence
+	if len(deps) > 0 {
+		resultDeps = deps
+	} else {
+		resultDeps = e.dependence
+	}
+
+	if len(resultDeps) > 0 {
+		if strings.Contains(e.dollar["id"], "linkContainer") {
+			log.Println(e.dollar["id"])
+		}
+		groupID := "g" + getRandomID(8)
+
+		eID, ok := e.dollar["id"]
+		if !ok {
+			panic("E has no id..")
+		}
+
+		linkID, _ := e.dollar["linkId"]
+
+		gr := Group{
+			Id:         groupID,
+			Dependency: getDependenciesText(resultDeps),
+			Text:       eID,
+			Link:       linkID,
+		}
+		addGroup(gr)
+		allText = `<a id="` + groupID + `/">` + allText + `<a/>`
+	}
+
+	return allText
 }
