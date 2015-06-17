@@ -157,33 +157,32 @@ func (e *E) addChildE(child *E) {
 	e.e = append(e.e, child)
 }
 
-var linkCont E
-
-func (e *E) getText() string {
-
-	if id, ok := e.dollar["id"]; ok && strings.Contains(id, "linkContainer") {
-		linkCont = *e
-	}
-
-	ddNumeration := 0
+func (e *E) getNumeration() string {
+	ddNumeration := "0"
 	if oldNumber, ok := e.dollar["number"]; ok {
 		switch oldNumber {
 		case "auto":
-			ddNumeration = -1
+			ddNumeration = "-1"
 		case "none":
-			ddNumeration = 0
+			ddNumeration = "0"
 		case "clear":
-			ddNumeration = 0
+			ddNumeration = "0"
 		case "parent":
-			ddNumeration = -1
+			ddNumeration = "-1"
 		default:
 			log.Printf("Unknown numeration type: %s\n", oldNumber)
 		}
 	}
 
 	if resetNumber, ok := e.dollar["resetnumber"]; ok && resetNumber == "true" {
-		ddNumeration = 1
+		ddNumeration = "1"
 	}
+
+	return ddNumeration
+}
+
+func (e *E) getOwnText() string {
+	ddNumeration := e.getNumeration()
 
 	attrMap := make(map[string]string)
 	for _, attr := range e.attribute {
@@ -216,7 +215,7 @@ func (e *E) getText() string {
 
 		c.Attr = append(c.Attr, html.Attribute{Key: "id", Val: paragraphID})
 		c.Attr = append(c.Attr, html.Attribute{Key: "dd-level", Val: strconv.Itoa(e.level)})
-		c.Attr = append(c.Attr, html.Attribute{Key: "dd-numeration", Val: strconv.Itoa(ddNumeration)})
+		c.Attr = append(c.Attr, html.Attribute{Key: "dd-numeration", Val: ddNumeration})
 
 		styleDefault := make(map[string]string)
 		styleCustom := make(map[string]string)
@@ -238,6 +237,7 @@ func (e *E) getText() string {
 					})
 				continue
 			}
+
 			c.Attr = append(c.Attr,
 				html.Attribute{
 					Key: k,
@@ -250,10 +250,48 @@ func (e *E) getText() string {
 		paragraphID = "e" + getRandomID(8)
 	}
 
-	ownText := buf.String()
+	return buf.String()
+}
+
+var (
+	linkCont E
+	varText  string
+)
+
+func (e *E) getText() string {
+
+	if id, ok := e.dollar["id"]; ok && strings.Contains(id, "linkContainer") {
+		linkCont = *e
+
+	}
+
+	if varCont, ok := e.dollar["varcont"]; ok && varCont == "1" {
+		varText = "v" + getRandomID(8)
+	}
+
+	_, okVarcont := e.dollar["varcont"]
+	_, okVar := e.dollar["var"]
+
+	if !okVarcont && !okVar && varText != "" {
+		varText = ""
+	}
+
+	ownText := e.getOwnText()
 	childrenText := ""
-	for _, child := range e.e {
-		childrenText += child.getText()
+	for k, child := range e.e {
+
+		// check if there is opened linkContainer group
+		aCloseTag := ""
+		contLink, _ := linkCont.dollar["linkId"]
+		childLink, _ := child.dollar["linkId"]
+
+		// close opened group if child is not logic child of linkCont or child is last
+		if (contLink != "" && childLink != contLink) || (contLink != "" && k == len(e.e)-1) {
+			aCloseTag = `<a/>`
+			linkCont = E{}
+		}
+
+		childrenText += child.getText() + aCloseTag
 	}
 
 	allText := ownText + childrenText
@@ -293,27 +331,39 @@ func (e *E) getText() string {
 		resultDeps = e.dependence
 	}
 
-	if len(resultDeps) > 0 {
-		if strings.Contains(e.dollar["id"], "linkContainer") {
-			log.Println(e.dollar["id"])
-		}
+	// groups for linkContainer`s
+	if eID, ok := e.dollar["id"]; ok && strings.Contains(eID, "linkContainer") {
+
 		groupID := "g" + getRandomID(8)
+		link, _ := e.dollar["link"]
 
-		eID, ok := e.dollar["id"]
-		if !ok {
-			panic("E has no id..")
+		gr := Group{
+			Id: groupID,
+			// Dependency: getDependenciesText(resultDeps),
+			Link: link,
 		}
 
-		linkID, _ := e.dollar["linkId"]
+		addGroup(gr)
+		allText = `<a id="` + groupID + `"/>` + allText
+
+		return allText
+	}
+
+	// groups for var`s or e`s with dependencies
+	if len(resultDeps) > 0 {
+
+		groupID := "g" + getRandomID(8)
+		varName, _ := e.dollar["variantName"]
 
 		gr := Group{
 			Id:         groupID,
+			Name:       varText,
+			Text:       varName,
 			Dependency: getDependenciesText(resultDeps),
-			Text:       eID,
-			Link:       linkID,
 		}
+
 		addGroup(gr)
-		allText = `<a id="` + groupID + `/">` + allText + `<a/>`
+		allText = `<a id="` + groupID + `"/>` + allText + `<a/>`
 	}
 
 	return allText

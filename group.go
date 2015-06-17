@@ -8,10 +8,10 @@ import (
 )
 
 type Group struct {
-	Name       string `json:"name"`
-	Text       string `json:"text"`
-	Link       string `json:"link"`
-	Dependency string `json:"dependency"`
+	Name       string `json:"name,omitempty"`
+	Text       string `json:"text,omitempty"`
+	Link       string `json:"link,omitempty"`
+	Dependency string `json:"dependency,omitempty"`
 	Id         string `json:"-"`
 }
 

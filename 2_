@@ -385,15 +385,15 @@ array (
                     0 => 
                     array (
                       '_' => '<div contentEditable="false">
-<div id="spreadsheetNonEditablePlace" contentEditable="false" onresizestart="stopResize()">
-<table style="TABLE-LAYOUT: fixed" ondragstart="event.returnValue = false;" id="ss78766D31" onselectstart="" class="spreadsheet" contentEditable="false" cellSpacing="0" cellPadding="0"  version="3" name="Место заключения" onsenectstart="event.returnValue = false;" noresize="noresize" >
-<colgroup>
-<col style="WIDTH: 50%" id="spreadsheet-col-0F9F89FD" colLetter="A"  />
-<col style="WIDTH: 50%" id="spreadsheet-col-026197AB" colLetter="B"  /></colgroup>
-<thead></thead>
-<tbody>
-<tr style="HEIGHT: auto" id="spreadsheet-row-4A69E338" class="spreadsheet-row">
-<td class="spreadsheet-cell">&#160;',
+                          <div id="spreadsheetNonEditablePlace" contentEditable="false" onresizestart="stopResize()">
+                          <table style="TABLE-LAYOUT: fixed" ondragstart="event.returnValue = false;" id="ss78766D31" onselectstart="" class="spreadsheet" contentEditable="false" cellSpacing="0" cellPadding="0"  version="3" name="Место заключения" onsenectstart="event.returnValue = false;" noresize="noresize" >
+                          <colgroup>
+                          <col style="WIDTH: 50%" id="spreadsheet-col-0F9F89FD" colLetter="A"  />
+                          <col style="WIDTH: 50%" id="spreadsheet-col-026197AB" colLetter="B"  /></colgroup>
+                          <thead></thead>
+                          <tbody>
+                          <tr style="HEIGHT: auto" id="spreadsheet-row-4A69E338" class="spreadsheet-row">
+                          <td class="spreadsheet-cell">&#160;',
                     ),
                     1 => 
                     array (
@@ -12802,7 +12802,7 @@ array (
                     2 => 
                     array (
                       '_' => '" с отступлениями от "Договора", ухудшившими результат "Работ", или с иными недостатками, которые делают его не пригодным для предусмотренного в "Договоре" использования либо непригодным для обычного использования:&#160; 
-<p>-&#160;потребовать от "',
+        <p>-&#160;потребовать от "',
                     ),
                     3 => 
                     array (
@@ -12889,7 +12889,7 @@ array (
                     4 => 
                     array (
                       '_' => '" безвозмездного устранения недостатков в разумный срок;</p>
-<p>-&#160;потребовать от "',
+        <p>-&#160;потребовать от "',
                     ),
                     5 => 
                     array (

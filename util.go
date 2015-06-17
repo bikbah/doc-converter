@@ -4,8 +4,16 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"math/rand"
 	"strings"
+	"time"
 )
+
+var r *rand.Rand
+
+func init() {
+	r = rand.New(rand.NewSource(time.Now().UnixNano()))
+}
 
 // checkAssert panics if not ok.
 func checkAssert(ok bool) {
