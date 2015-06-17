@@ -131,11 +131,40 @@ func (e *E) parse(i interface{}) {
 
 func (e *E) setLevels() {
 	childrenLevel := e.level + 1
-	if _, ok := e.dollar["varcont"]; ok || strings.Contains(e.dollar["id"], "linkContainer") {
+
+	_, inVar := e.dollar["varcont"]
+	if inVar {
 		childrenLevel--
 	}
 
+	var linkCont E
+	if eID, ok := e.dollar["id"]; ok && strings.Contains(eID, "linkContainer") {
+		childrenLevel--
+		linkCont = *e
+	}
+
 	for _, child := range e.e {
+
+		if isVar, ok := child.dollar["var"]; (!ok || isVar != "1") && inVar {
+			childrenLevel++
+			inVar = false
+
+			child.level = childrenLevel
+			child.setLevels()
+			continue
+		}
+
+		linkContLinkID, _ := linkCont.dollar["linkId"]
+		childLinkID, _ := child.dollar["linkId"]
+		if linkContLinkID != "" && childLinkID != linkContLinkID {
+			childrenLevel++
+			linkCont = E{}
+
+			child.level = childrenLevel
+			child.setLevels()
+			continue
+		}
+
 		child.level = childrenLevel
 		child.setLevels()
 	}
