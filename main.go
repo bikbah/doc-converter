@@ -28,6 +28,8 @@ func main() {
 	rootE := E{}
 	rootE.rawData = make(map[string]interface{})
 	rootE.parse(res)
+
 	saveData(rootE.getText())
 	saveGroups()
+	saveErrors()
 }

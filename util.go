@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"io/ioutil"
 	"log"
@@ -27,6 +28,24 @@ func saveData(text string) {
 	html := `<html><head><meta charset="utf8"></head><body>` + text + `</body></html>`
 	if err := ioutil.WriteFile("out.html", []byte(html), 0644); err != nil {
 		log.Fatalf("Write file error: %v", err)
+	}
+}
+
+func saveErrors() {
+
+	if len(invalidDepsErrors) == 0 {
+		return
+	}
+
+	var buf bytes.Buffer
+
+	for _, v := range invalidDepsErrors {
+		s := fmt.Sprintf("Invalid dependencies for e with id=%s.\n", v)
+		buf.WriteString(s)
+	}
+
+	if err := ioutil.WriteFile("errors.txt", buf.Bytes(), 0644); err != nil {
+		log.Printf("Saving errors to file error: %v", err)
 	}
 }
 

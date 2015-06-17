@@ -9,6 +9,12 @@ type Dependence struct {
 	operation string
 }
 
+var invalidDepsErrors []string
+
+func init() {
+	invalidDepsErrors = make([]string, 0)
+}
+
 func (dep *Dependence) parse(i interface{}) {
 	m, ok := i.(map[interface{}]interface{})
 	if !ok {
@@ -49,9 +55,9 @@ func (dep *Dependence) parse(i interface{}) {
 	dep.value = fmt.Sprint(depValue)
 }
 
-func getDependenciesText(deps []Dependence) string {
+func getDependenciesText(deps []Dependence, e E) string {
 	res := ""
-	for _, dep := range deps {
+	for k, dep := range deps {
 
 		res += dep.operation
 
@@ -64,6 +70,12 @@ func getDependenciesText(deps []Dependence) string {
 
 		res += cond
 		res += dep.value
+
+		if k > 0 && dep.operation == "" {
+			if id, ok := e.dollar["id"]; ok && id != "" {
+				invalidDepsErrors = append(invalidDepsErrors, id)
+			}
+		}
 	}
 
 	return res

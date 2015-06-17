@@ -359,7 +359,7 @@ func (e *E) getText() string {
 			Id:         groupID,
 			Name:       varText,
 			Text:       varName,
-			Dependency: getDependenciesText(resultDeps),
+			Dependency: getDependenciesText(resultDeps, *e),
 		}
 
 		addGroup(gr)
